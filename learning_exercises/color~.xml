@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\learning_exercises\color.v4p" systemname="color" filename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\learning_exercises\color.v4p" scrollx="255" scrolly="0">
+   <PATCH nodename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\learning_exercises\color.v4p" systemname="color" filename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\learning_exercises\color.v4p" scrollx="7290" scrolly="0">
    <BOUNDS type="Window" left="3315" top="1065" width="10845" height="8745">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="1">
@@ -305,7 +305,7 @@
    </BOUNDS>
    <PIN pinname="Go To Position" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Go" slicecount="1" values="1">
+   <PIN pinname="Go" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Velocity In" slicecount="1" values="0.32">
    </PIN>
