@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
    <PATCH nodename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\voodoo_dollhouse.v4p" systemname="voodoo_dollhouse" filename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\voodoo_dollhouse.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="9705" top="525" width="9000" height="10140">
+   <BOUNDS type="Window" left="-23745" top="1395" width="28200" height="10140">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">
    <BOUNDS type="Node" left="315" top="75" width="100" height="100">
@@ -34,10 +34,10 @@
    <PIN pinname="Size" slicecount="1" values="5">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (GDI)" nodename="Renderer (GDI)" componentmode="InABox" id="2">
-   <BOUNDS type="Node" left="11220" top="375" width="100" height="100">
+   <NODE systemname="Renderer (GDI)" nodename="Renderer (GDI)" componentmode="InAWindow" id="2">
+   <BOUNDS type="Node" left="17985" top="945" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="11220" top="375" width="8475" height="5265">
+   <BOUNDS type="Box" left="17985" top="945" width="8475" height="5265">
    </BOUNDS>
    <BOUNDS type="Window" left="15435" top="6255" width="6120" height="4860">
    </BOUNDS>
@@ -101,7 +101,7 @@
    <LINK srcnodeid="14" srcpinname="Output" dstnodeid="5" dstpinname="Index">
    </LINK>
    <NODE systemname="Text (GDI)" nodename="Text (GDI)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="7695" top="4695" width="100" height="100">
+   <BOUNDS type="Node" left="7950" top="5400" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Text" visible="1" slicecount="50" values="|This cat is a pig |,|has a girl who&apos;s a dog |,|but thinks she&apos;s a fox |,|The pig is a snake |,|Who pontificates |,|Harken, he&apos;s blessed &cr;&lf;|,|The fox is a mess &cr;&lf;The fox is a mess |,|A community chest |,|Yeah, she gets around |,|Her face is a cake &cr;&lf;|,|and when she gets baked |,|it melts to a frown |,|They take pictures of each other|,|taking pix of one another |,|There&apos;s some worms with no brains|,|who come out when it rains|,|And they squirm on the ground|,|til the birds come around |,|It summons the brood|,|putting chicks in the mood |,|A hawk sees the flock and swoops in on a hen|,|Dressing smart for one another|,|so they can undress each other|,|The weasel in mink always says what he thinks|,|till the skunk made a stink |,|The Rodents attack but the Varmints fight back|,|and fur starts to fly |,|Caught in the brawl|,|the dog tries to call out for the cat |,|Diving into the fray|,|he pulls her away|,|He just saved the day |,|They take pictures of each other|,|taking pix of one another|,,,,,,,,,,,,,,,,">
    </PIN>
@@ -153,13 +153,13 @@
    <LINK srcnodeid="18" srcpinname="Output" dstnodeid="16" dstpinname="Size">
    </LINK>
    <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="19" exposed="1">
-   <BOUNDS type="Node" left="8895" top="7170" width="100" height="100">
+   <BOUNDS type="Node" left="9645" top="7485" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="8895" top="7170" width="4905" height="240">
+   <BOUNDS type="Box" left="9645" top="7485" width="4905" height="240">
    </BOUNDS>
    <PIN pinname="Color Output" visible="1">
    </PIN>
-   <PIN pinname="Color Input" slicecount="2" values="|0.97131,0.97131,0.97131,1.00000|,|1.00000,1.00000,1.00000,1.00000|">
+   <PIN pinname="Color Input" slicecount="2" values="|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
    <PIN pinname="Columns" slicecount="1" values="2">
    </PIN>

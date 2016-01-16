@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\voodoo_dollhouse.v4p" systemname="voodoo_dollhouse" filename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\voodoo_dollhouse.v4p" scrollx="15" scrolly="-360">
+   <PATCH nodename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\voodoo_dollhouse.v4p" systemname="voodoo_dollhouse" filename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\voodoo_dollhouse.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="9705" top="525" width="9000" height="10140">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">
    <BOUNDS type="Node" left="315" top="75" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="315" top="75" width="2130" height="9300">
+   <BOUNDS type="Box" left="315" top="75" width="5205" height="9300">
    </BOUNDS>
    <PIN pinname="Columns" slicecount="1" values="1">
    </PIN>
@@ -13,9 +13,9 @@
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="60">
+   <PIN pinname="Rows" slicecount="1" values="51">
    </PIN>
-   <PIN pinname="Input String" slicecount="60" values="|She put me in a voodoo dollhouse|,|And she tied me to a tiny plastic chair|,|Which she keeps inside her voodoo dollhouse|,|With my photo and a locket of my hair|,|And I think that it might be a curse|,|Cause she’s stolen my heart and she put it in her purse |,|And I don&apos;t think that I am ever coming home|,,|Lights out, candles burning|,|My mind is racing, tummy turning |,|Sitting on needles and on pins |,|I hold my breath as she walks in |,|I never really wanted  |,,|To be an independent person |,|Or in my dreams imagined |,|I’d be involved in such perversion  |,,|Forcefed twisted tainted love |,|Dripping down in a mist from above |,|Darkness surrounds me |,|Her arms are wrapped around me |,|She egged me on |,|She made an omelette |,|She made my soul sick |,|Spiritual Vomit |,|She put me in a voodoo dollhouse|,|And she tied me to a tiny plastic chair|,|Which she keeps inside her voodoo dollhouse|,|With my photo and a locket of my hair|,|And she tells me that I might be the one |,|But I’m not about to argue when she's pointing the gun |,|And I don't think that I am ever coming home |,|She put me in a voodoo dollhouse|,|And she tied me to a tiny plastic chair|,|Which she keeps inside her voodoo dollhouse|,|With my photo and a locket of my hair|,|She melted my mind just like a svengali |,|She molded me into her own voodoo dolly |,|And I don't think that I am ever coming home |,|And I’m burning it down, down, down |,|Down, down, down, down|,|down|,|down|,|down|,|Down, down, down, down|,|down|,|down|,|down|,|down|,|down|,">
+   <PIN pinname="Input String" slicecount="51" values="|She put me in a voodoo dollhouse|,|And she tied me to a tiny plastic chair|,|Which she keeps inside her voodoo dollhouse|,|With my photo and a locket of my hair|,|And I think that it might be a curse|,|Cause she’s stolen my heart and she put it in her purse |,|And I don&apos;t think that I am ever coming home|,,|Lights out, candles burning|,|My mind is racing, tummy turning |,|Sitting on needles and on pins |,|I hold my breath as she walks in |,|I never really wanted  |,,|To be an independent person |,|Or in my dreams imagined |,|I’d be involved in such perversion  |,,|Forcefed twisted tainted love |,|Dripping down in a mist from above |,|Darkness surrounds me |,|Her arms are wrapped around me |,|She egged me on |,|She made an omelette |,|She made my soul sick |,|Spiritual Vomit |,|She put me in a voodoo dollhouse|,|And she tied me to a tiny plastic chair|,|Which she keeps inside her voodoo dollhouse|,|With my photo and a locket of my hair|,|And she tells me that I might be the one |,|But I’m not about to argue when she&apos;s pointing the gun |,|And I don&apos;t think that I am ever coming home |,|She put me in a voodoo dollhouse|,|And she tied me to a tiny plastic chair|,|Which she keeps inside her voodoo dollhouse|,|With my photo and a locket of my hair|,|She melted my mind just like a svengali |,|She molded me into her own voodoo dolly |,|And I don&apos;t think that I am ever coming home |,|And I’m burning it down, down, down |,|Down, down, down, down|,|down, down|,down,,|Down, down, down, down|,down,|down, down, down|,down,,">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -35,9 +35,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Renderer (GDI)" nodename="Renderer (GDI)" componentmode="InABox" id="2">
-   <BOUNDS type="Node" left="10020" top="1080" width="100" height="100">
+   <BOUNDS type="Node" left="11220" top="375" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="10020" top="1080" width="3870" height="3240">
+   <BOUNDS type="Box" left="11220" top="375" width="8475" height="5265">
    </BOUNDS>
    <BOUNDS type="Window" left="15435" top="6255" width="6120" height="4860">
    </BOUNDS>
@@ -93,7 +93,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="34">
+   <PIN pinname="Maximum" slicecount="1" values="51">
    </PIN>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Up">
