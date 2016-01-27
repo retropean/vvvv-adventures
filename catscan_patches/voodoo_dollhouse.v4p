@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\voodoo_dollhouse.v4p" systemname="voodoo_dollhouse" filename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\voodoo_dollhouse.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="-23745" top="1395" width="28200" height="10140">
+   <PATCH nodename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\voodoo_dollhouse.v4p" systemname="voodoo_dollhouse" filename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\voodoo_dollhouse.v4p" scrollx="120" scrolly="0">
+   <BOUNDS type="Window" left="-23835" top="4125" width="21690" height="10140">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">
    <BOUNDS type="Node" left="315" top="75" width="100" height="100">
@@ -15,7 +15,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="51">
    </PIN>
-   <PIN pinname="Input String" slicecount="51" values="|She put me in a voodoo dollhouse|,|And she tied me to a tiny plastic chair|,|Which she keeps inside her voodoo dollhouse|,|With my photo and a locket of my hair|,|And I think that it might be a curse|,|Cause she’s stolen my heart and she put it in her purse |,|And I don&apos;t think that I am ever coming home|,,|Lights out, candles burning|,|My mind is racing, tummy turning |,|Sitting on needles and on pins |,|I hold my breath as she walks in |,|I never really wanted  |,,|To be an independent person |,|Or in my dreams imagined |,|I’d be involved in such perversion  |,,|Forcefed twisted tainted love |,|Dripping down in a mist from above |,|Darkness surrounds me |,|Her arms are wrapped around me |,|She egged me on |,|She made an omelette |,|She made my soul sick |,|Spiritual Vomit |,|She put me in a voodoo dollhouse|,|And she tied me to a tiny plastic chair|,|Which she keeps inside her voodoo dollhouse|,|With my photo and a locket of my hair|,|And she tells me that I might be the one |,|But I’m not about to argue when she&apos;s pointing the gun |,|And I don&apos;t think that I am ever coming home |,|She put me in a voodoo dollhouse|,|And she tied me to a tiny plastic chair|,|Which she keeps inside her voodoo dollhouse|,|With my photo and a locket of my hair|,|She melted my mind just like a svengali |,|She molded me into her own voodoo dolly |,|And I don&apos;t think that I am ever coming home |,|And I’m burning it down, down, down |,|Down, down, down, down|,|down, down|,down,,|Down, down, down, down|,down,|down, down, down|,down,,">
+   <PIN pinname="Input String" slicecount="51" values="|She put me in a voodoo dollhouse|,|And she tied me to a tiny plastic chair|,|Which she keeps inside her voodoo dollhouse|,|With my photo and a locket of my hair|,|And I think that it might be a curse|,|Cause she’s stolen my heart and she put it in her purse |,|And I don&apos;t think that I am ever coming home|,,|Lights out, candles burning|,|My mind is racing, tummy turning |,|I hold my breath as she walks in|,|Sitting on needles and on pins |,|I never really wanted  |,|To be an independent person |,|Or in my dreams imagined |,|I’d be involved in such perversion  |,,,|Forcefed twisted tainted love |,|Dripping down in a mist from above |,|Darkness surrounds me |,|Her arms are wrapped around me |,|She egged me on |,|She made an omelette |,|She made my soul sick |,|Spiritual Vomit |,|She put me in a voodoo dollhouse|,|And she tied me to a tiny plastic chair|,|Which she keeps inside her voodoo dollhouse|,|With my photo and a locket of my hair|,|And she tells me that I might be the one |,|But I’m not about to argue when she&apos;s pointing the gun |,|And I don&apos;t think that I am ever coming home |,|She put me in a voodoo dollhouse|,|And she tied me to a tiny plastic chair|,|Which she keeps inside her voodoo dollhouse|,|With my photo and a locket of my hair|,|She melted my mind just like a svengali |,|She molded me into her own voodoo dolly |,|And I don&apos;t think that I am ever coming home |,|And I’m burning it down, down, down |,|Down, down, down, down|,|down, down|,down,,|Down, down, down, down|,down,|down, down, down|,down,,">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -39,7 +39,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="17985" top="945" width="8475" height="5265">
    </BOUNDS>
-   <BOUNDS type="Window" left="15435" top="6255" width="6120" height="4860">
+   <BOUNDS type="Window" left="11640" top="5100" width="6120" height="4860">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -113,7 +113,7 @@
    </PIN>
    <PIN pinname="Height" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Size" slicecount="1" visible="1" values="12">
+   <PIN pinname="Size" slicecount="1" visible="1" values="55">
    </PIN>
    <PIN pinname="Bold" slicecount="1" values="1">
    </PIN>
@@ -149,8 +149,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Y" dstnodeid="18" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="16" dstpinname="Size">
    </LINK>
    <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="19" exposed="1">
    <BOUNDS type="Node" left="9645" top="7485" width="100" height="100">
@@ -202,4 +200,14 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Right Button" dstnodeid="20" dstpinname="Y Input Value">
    </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="27">
+   <BOUNDS type="Node" left="10755" top="6150" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10755" top="6150" width="2625" height="420">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|reattach for dynamic font size|">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
    </PATCH>

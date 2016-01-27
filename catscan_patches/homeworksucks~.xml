@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
    <PATCH nodename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\homeworksucks.v4p" systemname="homeworksucks" filename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\homeworksucks.v4p" scrollx="15" scrolly="-360">
-   <BOUNDS type="Window" left="9705" top="525" width="9000" height="10140">
+   <BOUNDS type="Window" left="4080" top="960" width="9000" height="10140">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">
    <BOUNDS type="Node" left="90" top="45" width="100" height="100">
@@ -15,7 +15,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="36">
    </PIN>
-   <PIN pinname="Input String" slicecount="36" values="|new year, new tour |,|same songs, the same four |,|our music&apos;s stuck in limbo |,|sustained by high school bimbos |,|the drummer just quit |,|sick of preteen bullshit |,|our tshirts on children |,|who lack the breasts to fill them |,|no one wants to hang with you |,|when you&apos;re bald at 32 |,|no one wants to be your friend |,|when your youth is at an end |,|life is gonna make you frown |,|and then you&apos;re 6 feet underground |,|you&apos;re half the man your father was |,|life is tough |,|and homework sucks! |,,|My credit&apos;s abysmal |,|My love life… dismal |,|Taking prescriptions |,|for my gambling addiction |,|my fridge is barren |,|just like my ex-wife Karen |,|libido waning |,|with each pound that I&apos;m gaining |,|no reason left to be alive |,|when you&apos;re pushing 45 |,|and no one wants to be with you |,|when your life is half way through |,|life is gonna get you down |,|as the green leaves turn to brown |,|you&apos;re half them man you used to be |,|life is fucked! |,|and homework sucks|,">
+   <PIN pinname="Input String" slicecount="36" values="|new year, new tour |,|same songs, the same four |,|our music&apos;s stuck in limbo |,|sustained by high school bimbos |,|the drummer just quit |,|sick of preteen bullshit |,|our t-shirts on children |,|who lack the breasts to fill them |,|no one wants to be with you |,|when you&apos;re bald at 32 |,|no one wants to be your friend |,|when your youth is at an end |,|life is gonna get you down|,|and then you&apos;re 6 feet underground |,|you&apos;re half the man your father was |,|life is tough |,|and homework sucks! |,,|My credit&apos;s abysmal |,|My love life… dismal |,|Taking prescriptions |,|for my gambling addiction |,|my fridge is barren |,|just like my ex-wife Karen |,|libido waning |,|with each pound that I&apos;m gaining |,|no reason left to be alive |,|when you&apos;re pushing 45 |,|and no one wants to be with you |,|when your life is half way through |,|life is gonna get you down |,|as the green leaves turn to brown |,|you&apos;re half the man you used to be |,|life is fucked! |,|and homework sucks|,">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -113,11 +113,11 @@
    </PIN>
    <PIN pinname="Height" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Size" slicecount="1" visible="1" values="12">
+   <PIN pinname="Size" slicecount="1" visible="1" values="80">
    </PIN>
-   <PIN pinname="Bold" slicecount="1" values="0">
+   <PIN pinname="Bold" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Font" slicecount="1" values="|@Arial Unicode MS|">
+   <PIN pinname="Font" slicecount="1" values="Arial">
    </PIN>
    <PIN pinname="Pen Color" visible="1">
    </PIN>
@@ -131,7 +131,7 @@
    <LINK srcnodeid="5" srcpinname="Output" dstnodeid="16" dstpinname="Text">
    </LINK>
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="5550" top="5505" width="100" height="100">
+   <BOUNDS type="Node" left="4815" top="5550" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -141,16 +141,14 @@
    </PIN>
    <PIN pinname="Source Minimum" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Destination Minimum" slicecount="1" values="26.39">
+   <PIN pinname="Destination Minimum" slicecount="1" values="40">
    </PIN>
-   <PIN pinname="Destination Maximum" slicecount="1" values="300.66">
+   <PIN pinname="Destination Maximum" slicecount="1" values="80">
    </PIN>
    <PIN pinname="Mapping" slicecount="1" values="Clamp">
    </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Y" dstnodeid="18" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="16" dstpinname="Size">
    </LINK>
    <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="19" exposed="1">
    <BOUNDS type="Node" left="3735" top="6855" width="100" height="100">
@@ -202,4 +200,14 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Right Button" dstnodeid="20" dstpinname="Y Input Value">
    </LINK>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="27">
+   <BOUNDS type="Node" left="5940" top="4980" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5940" top="4980" width="1425" height="1245">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|reattach for map sizing|">
+   </PIN>
+   </NODE>
    </PATCH>

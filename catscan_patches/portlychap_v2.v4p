@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\portlychap_v2.v4p" systemname="portlychap_v2" filename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\portlychap_v2.v4p" scrollx="0" scrolly="2085">
-   <BOUNDS type="Window" left="165" top="2370" width="17460" height="10140">
+   <PATCH nodename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\portlychap_v2.v4p" systemname="portlychap_v2" filename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\portlychap_v2.v4p" scrollx="360" scrolly="3690">
+   <BOUNDS type="Window" left="510" top="480" width="18510" height="9585">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">
-   <BOUNDS type="Node" left="90" top="465" width="100" height="100">
+   <BOUNDS type="Node" left="60" top="885" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="90" top="465" width="1335" height="15810">
+   <BOUNDS type="Box" left="60" top="885" width="1920" height="16425">
    </BOUNDS>
    <PIN pinname="Columns" slicecount="1" values="1">
    </PIN>
@@ -93,11 +93,11 @@
    </PIN>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="38">
-   <BOUNDS type="Node" left="6060" top="4890" width="100" height="100">
+   <BOUNDS type="Node" left="5670" top="5535" width="1500" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="6060" top="4890" width="9075" height="5505">
+   <BOUNDS type="Box" left="5670" top="5535" width="9075" height="5505">
    </BOUNDS>
-   <BOUNDS type="Window" left="6015" top="7215" width="6120" height="4860">
+   <BOUNDS type="Window" left="8685" top="915" width="11205" height="6750">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -109,13 +109,23 @@
    </PIN>
    <PIN pinname="Backbuffer Width" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Fullscreen" slicecount="1" values="1">
+   <PIN pinname="Fullscreen" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Background Color" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
    <PIN pinname="Left Button" visible="1">
+   </PIN>
+   <PIN pinname="Fullscreen Format" slicecount="1" values="R5G6B5">
+   </PIN>
+   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Fullscreen Backbuffer Count" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Fullscreen Swap Effect" slicecount="1" values="copy">
+   </PIN>
+   <PIN pinname="Device" slicecount="1" values="-1">
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="51">
@@ -155,7 +165,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="34">
+   <PIN pinname="Maximum" slicecount="1" values="44">
    </PIN>
    </NODE>
    <LINK srcnodeid="50" srcpinname="Y Output Value" dstnodeid="49" dstpinname="Up">
@@ -175,7 +185,7 @@
    </PIN>
    <PIN pinname="Destination Minimum" slicecount="1" values="0.5">
    </PIN>
-   <PIN pinname="Destination Maximum" slicecount="1" values="2">
+   <PIN pinname="Destination Maximum" slicecount="1" values="1.79">
    </PIN>
    <PIN pinname="Mapping" slicecount="1" values="Float">
    </PIN>
@@ -211,8 +221,6 @@
    <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="51" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="38" srcpinname="Y" dstnodeid="47" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="38" srcpinname="Right Button" dstnodeid="45" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="19" srcpinname="Color Output" dstnodeid="36" dstpinname="Color">
    </LINK>
@@ -262,8 +270,6 @@
    <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="78" srcpinname="Layer" dstnodeid="38" dstpinname="Layers">
-   </LINK>
    <LINK srcnodeid="36" srcpinname="Layer" dstnodeid="78" dstpinname="Layer 3">
    </LINK>
    <NODE systemname="Subtract (Value)" nodename="IOBox (String)" componentmode="InABox" id="110">
@@ -365,7 +371,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="18045" top="10440" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="107" visible="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="107">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -511,8 +517,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="139" srcpinname="Y Output Value" dstnodeid="138" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="38" srcpinname="Left Button" dstnodeid="139" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="138" srcpinname="Up Edge" dstnodeid="140" dstpinname="Up">
    </LINK>
@@ -952,8 +956,6 @@
    </LINK>
    <LINK srcnodeid="175" srcpinname="Output" dstnodeid="173" dstpinname="Value">
    </LINK>
-   <LINK srcnodeid="174" srcpinname="Color Output" dstnodeid="38" dstpinname="Background Color">
-   </LINK>
    <NODE componentmode="InABox" id="178" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="420" left="19830" top="6555" type="Node" width="4845">
    </BOUNDS>
@@ -996,4 +998,14 @@
    <LINKPOINT x="22065" y="8745">
    </LINKPOINT>
    </LINK>
+   <LINK srcnodeid="38" srcpinname="Right Button" dstnodeid="45" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Left Button" dstnodeid="139" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="174" srcpinname="Color Output" dstnodeid="38" dstpinname="Background Color">
+   </LINK>
+   <LINK srcnodeid="78" srcpinname="Layer" dstnodeid="38" dstpinname="Layers">
+   </LINK>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
    </PATCH>
