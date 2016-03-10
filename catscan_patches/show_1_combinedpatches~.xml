@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\show_1_combinedpatches.v4p" systemname="show_1_combinedpatches" filename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\show_1_combinedpatches.v4p" scrollx="1590" scrolly="31680">
+   <PATCH nodename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\show_1_combinedpatches.v4p" systemname="show_1_combinedpatches" filename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\show_1_combinedpatches.v4p" scrollx="1590" scrolly="20880">
    <BOUNDS type="Window" left="3915" top="180" width="16575" height="10605">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">
