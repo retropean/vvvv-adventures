@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\Eric\Documents\GitHub\vvvv-adventures\for_use_later\mental_wireframe.v4p" systemname="mental_wireframe" filename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\for_use_later\mental_wireframe.v4p" scrollx="0" scrolly="6855">
-   <BOUNDS type="Window" left="-23565" top="150" width="39450" height="13680">
+   <PATCH nodename="C:\Users\Eric\Documents\GitHub\vvvv-adventures\slow_motion_vid\mental_wireframe.v4p" systemname="mental_wireframe" filename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\for_use_later\mental_wireframe.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="-2820" top="810" width="36180" height="13680">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.3.0">
    </PACK>
@@ -17,7 +17,7 @@
    </PIN>
    <PIN pinname="Projection" visible="1">
    </PIN>
-   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
    </PIN>
@@ -115,7 +115,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7065" top="300" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="3">
+   <PIN pinname="Y Input Value" slicecount="1" values="5">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -237,7 +237,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6525" top="300" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.06">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.11">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1088,7 +1088,7 @@
    <PIN pinname="Size" slicecount="1" values="16">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="221">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="FullScreen" id="221">
    <BOUNDS type="Node" left="26910" top="12645" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="26910" top="12645" width="4680" height="3180">

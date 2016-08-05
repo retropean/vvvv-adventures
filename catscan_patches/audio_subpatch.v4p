@@ -1,0 +1,267 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
+   <PATCH nodename="C:\Users\Eric\Documents\GitHub\vvvv-adventures\catscan_patches\audio_subpatch.v4p" systemname="audio_subpatch" filename="C:\Users\Eric\Documents\GitHub\vvvv-adventures\catscan_patches\audio_subpatch.v4p">
+   <NODE id="0" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="2625" top="4530" width="915" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2625" top="4530" width="870" height="315">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="215" height="160">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="smoothing">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE id="1" nodename="FrameDelay (Animation)" systemname="FrameDelay (Animation Legacy)" hiddenwhenlocked="1">
+   <BOUNDS type="Node" height="0" left="3780" top="5010" width="0">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="2" nodename="InputMorph (Value)" systemname="InputMorph (Value)" hiddenwhenlocked="1">
+   <BOUNDS type="Node" height="0" left="3570" top="4545" width="0">
+   </BOUNDS>
+   <PIN pinname="Input 2">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="16" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   </NODE>
+   <NODE id="3" nodename="Vector (2d Split)" systemname="Vector (2d Split)" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="3555" top="5535" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="4" componentmode="InABox" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)" hiddenwhenlocked="1">
+   <BOUNDS type="Node" height="0" left="2820" top="4140" width="0">
+   </BOUNDS>
+   <BOUNDS type="Window" height="160" left="9180" top="2040" width="215">
+   </BOUNDS>
+   <BOUNDS type="Box" height="240" left="2820" top="4140" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.15">
+   </PIN>
+   </NODE>
+   <NODE id="5" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS type="Node" height="270" left="6810" top="3630" width="3705">
+   </BOUNDS>
+   <BOUNDS type="Box" height="285" left="6810" top="3630" width="5040">
+   </BOUNDS>
+   <BOUNDS type="Window" height="160" left="0" top="0" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|the right channel is just a copy of the left if the audio source is mono|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE id="6" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS type="Node" height="270" left="5265" top="1500" width="1095">
+   </BOUNDS>
+   <BOUNDS type="Box" height="255" left="5265" top="1500" width="1095">
+   </BOUNDS>
+   <BOUNDS type="Window" height="160" left="300" top="300" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|left channel|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE id="7" componentmode="InABox" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS type="Node" height="270" left="5250" top="3630" width="1095">
+   </BOUNDS>
+   <BOUNDS type="Box" height="270" left="5250" top="3630" width="1110">
+   </BOUNDS>
+   <BOUNDS type="Window" height="160" left="0" top="0" width="215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|right channel|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE id="8" componentmode="InABox" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" height="0" left="5190" top="3945" width="0">
+   </BOUNDS>
+   <BOUNDS type="Window" height="160" left="9630" top="8070" width="215">
+   </BOUNDS>
+   <BOUNDS type="Box" height="1800" left="5190" top="3945" width="7770">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="128" values="0.0775277602301897,0.0544466847036768,0.202802818036097,0.0834202690031886,0.0925322452105371,0.0770281435155651,0.235055718705627,0.0440299425232958,0.132700716326894,0.0701791343840809,0.220979752284014,0.06750638978809,0.176774701842734,0.163810155063044,0.189686923082263,0.024008074405731,0.129350291931907,0.0711998491019109,0.151794868094119,0.0681947973834907,0.0781169467719782,0.107093251540886,0.151676585342084,0.0187817179868696,0.0894441530966258,0.0794822284585074,0.0849786183372579,0.0121920768476878,0.0358324606489333,0.0967210176110685,0.0932435613635898,0.114352108058516,0.0776796618826039,0.105829035694308,0.0490336214005021,0.0663743479617371,0.048870343131438,0.107525475498296,0.0500321615893201,0.0892381403555876,0.0567193864648012,0.0790075419967965,0.116860201877219,0.0992401468048562,0.0493680894465952,0.0941885392689567,0.0268042297666677,0.0599940172933331,0.0618405296152833,0.05927756607861,0.0978769505230815,0.116290170159385,0.0357628031964632,0.0845358907299116,0.0331917520436934,0.0415789800898849,0.0599489142191326,0.0139948903955126,0.0932618151617538,0.0079376009831256,0.0386632149035292,0.12648047004127,0.0938210339695684,0.0411339400060778,0.123463119454187,0.152925959129904,0.0944000427561787,0.0808812552042297,0.067909588916678,0.107554744791046,0.068754758741846,0.115365292993892,0.10049322466633,0.0271511710263215,0.0923363632378986,0.0172958902441036,0.0720271847631052,0.148093930782642,0.0931642105502866,0.0639707230815303,0.0592014166279432,0.0712715994593533,0.0631881783301763,0.0902211777535171,0.165511996089409,0.183835834974509,0.093069992892937,0.113189386578897,0.042703473842377,0.149163148982636,0.0628683490538915,0.271893153188153,0.181026271562984,0.224711662082506,0.171087727365258,0.17044267981647,0.123558417106062,0.168018108821844,0.129026647865179,0.242520403381829,0.193136242487206,0.150801730487348,0.115951641822906,0.11605763376038,0.0759568460125715,0.165858821039653,0.199066836435198,0.147296269539121,0.391720185048816,0.401467619456081,0.315182190244662,0.321216520002387,0.14638204904335,0.417031650622623,0.21660077166664,0.227778747475255,0.330006789338005,0.611928373145623,0.114988910538426,0.393483711972473,0.108948229669875,0.102126617267307,0.181747850340291,0.121609326089001,0.167225746286943,0.0672234449427384,0.157979204230587,0.279972272645247">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="512">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-0.01">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Background" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="9" componentmode="InABox" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" height="0" left="5235" top="1800" width="0">
+   </BOUNDS>
+   <BOUNDS type="Window" height="160" left="9330" top="7770" width="215">
+   </BOUNDS>
+   <BOUNDS type="Box" height="1740" left="5235" top="1800" width="7770">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="512">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-0.01">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="10" nodename="AudioAnalysis (DShow9)" systemname="AudioAnalysis (DShow9)" filename="%VVVV%\lib\nodes\modules\DShow9\AudioAnalysis (DShow9).v4p" hiddenwhenlocked="1">
+   <BOUNDS height="270" left="1515" top="2940" type="Node" width="2400">
+   </BOUNDS>
+   <BOUNDS height="3600" left="1515" top="2940" type="Box" width="4800">
+   </BOUNDS>
+   <BOUNDS height="6000" left="11520" top="8565" type="Window" width="9000">
+   </BOUNDS>
+   <PIN pinname="Audio Driver" visible="1">
+   </PIN>
+   <PIN pinname="Input Device" visible="1">
+   </PIN>
+   <PIN pinname="Gain" visible="1">
+   </PIN>
+   <PIN pinname="Analysis Values" visible="1">
+   </PIN>
+   <PIN pinname="Input Delay ms" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="11" nodename="SplitAudioAnalysis (Spreads)" systemname="SplitAudioAnalysis (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\SplitAudioAnalysis (Spreads).v4p" hiddenwhenlocked="1">
+   <BOUNDS height="270" left="1500" top="3390" type="Node" width="3510">
+   </BOUNDS>
+   <BOUNDS height="3600" left="1500" top="3390" type="Box" width="4800">
+   </BOUNDS>
+   <BOUNDS height="6000" left="12795" top="4425" type="Window" width="11580">
+   </BOUNDS>
+   <PIN pinname="Audio Analysis" visible="1">
+   </PIN>
+   <PIN pinname="FFT" visible="1">
+   </PIN>
+   <PIN pinname="Sound Volumes" visible="1">
+   </PIN>
+   <PIN pinname="Beat Decay" visible="1">
+   </PIN>
+   <PIN pinname="Energy" visible="1">
+   </PIN>
+   <PIN pinname="Beat" visible="1">
+   </PIN>
+   <PIN pinname="Phase" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="12" nodename="IOBox (Enumerations)" systemname="IOBox (Enumerations)" hiddenwhenlocked="1">
+   <BOUNDS height="0" left="1530" top="1860" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="255" left="1530" top="1860" type="Box" width="1425">
+   </BOUNDS>
+   <BOUNDS height="160" left="13305" top="9165" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   <PIN pinname="Input Enum" slicecount="1" values="|Microphone Array (Realtek High Definition Audio)|">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="13" nodename="IOBox (Enumerations)" systemname="IOBox (Enumerations)" hiddenwhenlocked="1">
+   <BOUNDS height="0" left="2670" top="2490" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="270" left="2670" top="2490" type="Box" width="1050">
+   </BOUNDS>
+   <BOUNDS height="160" left="14220" top="8715" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   <PIN pinname="Input Enum" slicecount="1" values="Stereomix">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="14" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)" hiddenwhenlocked="1">
+   <BOUNDS height="0" left="3120" top="2010" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="240" left="3120" top="2010" type="Box" width="795">
+   </BOUNDS>
+   <BOUNDS height="160" left="14280" top="7785" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="2.12">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="11" dstpinname="Audio Analysis" srcnodeid="10" srcpinname="Analysis Values">
+   </LINK>
+   <LINK dstnodeid="10" dstpinname="Audio Driver" srcnodeid="12" srcpinname="Output Enum">
+   </LINK>
+   <LINK dstnodeid="10" dstpinname="Input Device" srcnodeid="13" srcpinname="Output Enum">
+   </LINK>
+   <LINK dstnodeid="10" dstpinname="Gain" srcnodeid="14" srcpinname="Y Output Value">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="3" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="FFT" dstnodeid="2" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output 1" dstnodeid="2" dstpinname="Input 2">
+   <LINKPOINT x="3810" y="5460">
+   </LINKPOINT>
+   <LINKPOINT x="4845" y="5460">
+   </LINKPOINT>
+   <LINKPOINT x="4845" y="4140">
+   </LINKPOINT>
+   <LINKPOINT x="4470" y="4230">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="1" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Y" dstnodeid="8" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="15" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Y Output Value|">
+   </PIN>
+   <BOUNDS type="Box" left="5190" top="6035" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5190" top="6035" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="X" dstnodeid="9" dstpinname="Y Input Value">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="12015" height="7035">
+   </BOUNDS>
+   </PATCH>

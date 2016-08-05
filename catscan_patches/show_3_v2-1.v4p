@@ -1,0 +1,23 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
+   <PATCH nodename="C:\Users\Eric\Documents\GitHub\vvvv-adventures\catscan_patches\show_3_v2-1.v4p">
+   <NODE systemname="audio_subpatch" filename="audio_subpatch.v4p" nodename="audio_subpatch.v4p" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1500" top="1500" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="-4507" top="563" width="12015" height="7035">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-1" top="-1" width="12015" height="7035">
+   </BOUNDS>
+   </NODE>
+   <NODE id="1" systemname="IOBox (Value Advanced)" componentmode="InABox">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Y Output Value|">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="2000" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="2000" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Y Input Value">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="3000" height="3000">
+   </BOUNDS>
+   </PATCH>

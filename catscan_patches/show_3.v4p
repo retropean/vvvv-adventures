@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\Eric\Documents\GitHub\vvvv-adventures\catscan_patches\show_2.v4p" systemname="show_2" filename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\catscan_patches\show_2.v4p" scrollx="0" scrolly="3075">
-   <BOUNDS type="Window" left="6495" top="1725" width="11505" height="8505">
+   <PATCH nodename="C:\Users\Eric\Documents\GitHub\vvvv-adventures\catscan_patches\show_3.v4p" systemname="show_3" filename="C:\Users\Eric\Documents\GitHub\vvvv-adventures\catscan_patches\show_3.v4p" scrollx="30" scrolly="-1800">
+   <BOUNDS type="Window" left="-24990" top="1830" width="24420" height="12525">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">
-   <BOUNDS type="Node" left="2115" top="17670" width="100" height="100">
+   <BOUNDS type="Node" left="2040" top="20100" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2115" top="17670" width="2025" height="7035">
+   <BOUNDS type="Box" left="2040" top="20100" width="2025" height="7035">
    </BOUNDS>
    <PIN pinname="Columns" slicecount="1" values="1">
    </PIN>
@@ -131,7 +131,7 @@
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="51">
    <BOUNDS type="Node" left="7125" top="8460" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="47" values="|There&apos;s no more room in our skeleton crew!|,,|Avast ye, barkeep, tis our last night ashore|,|Will our last piece of gold afford us one more?|,|A flagon of ale before we set sail|,|And a bottle of rum for me and me chum|,|Shiver me timbers and rattle me bones|,|Untangle the cables and plug in the &apos;phones|,|Go string up the axes and tune them up tight|,|It sounds like we&apos;ll be first to go out tonight|,,|There&apos;s no more room in our skeleton crew|,|It&apos;s just us few, it&apos;s just us few|,|There&apos;s no more room in our skeleton crew|,|It&apos;s just us few, it&apos;s just us two|,|There&apos;s no more room in our skeleton crew|,,|We shout through the tempest without sound or sight|,|Though deafened by silence and blinded by light|,|We&apos;ll weather the storm without losing face|,|and vow that we&apos;ll never return to this place|,,|There&apos;s no more room in our skeleton crew|,|It&apos;s just us few, it&apos;s just us few|,|There&apos;s no more room in our skeleton crew|,|It&apos;s just us few, it&apos;s just us two|,|There&apos;s no more room in our skeleton crew|,,|We stay at our posts though the sun she doth roast|,|Though the wind she doth bite, we&apos;ll do what is right|,|Until ravenous gulls pluck the eyes from our skulls|,|We dance with delight though there&apos;s no end in sight|,|We do what we can, we love what we do|,|We do what we must to steer our ship true|,|Though our bones turn to dust, our cannons may rust|,|Oh, the legends they&apos;ll tell of our skeleton crew|,,|There&apos;s no more room in our skeleton crew|,|It&apos;s just us few, it&apos;s just us few|,|There&apos;s no more room in our skeleton crew|,|It&apos;s just us few, it&apos;s just us two|,|There&apos;s no more room in our skeleton crew|,|There&apos;s no more room in our skeleton crew|,|It&apos;s just us few|,|It&apos;s just us two |,,">
+   <PIN pinname="Input" visible="1" slicecount="42" values="| |,|new year, new tour |,|same songs, the same four |,|our music&apos;s stuck in limbo |,|sustained by high school bimbos |,|the drummer just quit |,|sick of preteen bullshit |,|our t-shirts on children |,|who lack the breasts to fill them |,|no one wants to be with you |,|when you&apos;re bald at 32 |,|no one wants to be your friend |,|when your youth is at an end |,|life is gonna get you down|,|and then you&apos;re 6 feet underground |,|you&apos;re half the man your father was |,|life is tough |,|and homework sucks! |,,|My credit&apos;s abysmal |,|My love life… |,|dismal |,|Taking prescriptions |,|for my gambling addiction |,|my fridge is barren |,|just like my ex-wife Karen |,|libido waning |,|with each pound that I&apos;m gaining |,|no reason left to be alive |,|when you&apos;re pushing 45 |,|and no one wants to be with you |,|when your life is half way through |,|life is gonna get you down |,|as the green leaves turn to brown |,|you&apos;re half the man you used to be |,|life is fucked! |,|and homework sucks|,,,,,">
    </PIN>
    <PIN pinname="Index" slicecount="1" visible="1" values="1">
    </PIN>
@@ -365,7 +365,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Period" slicecount="1" values="7.9">
+   <PIN pinname="Period" slicecount="1" values="9.84">
    </PIN>
    <PIN pinname="Phase" slicecount="1" values="0.97">
    </PIN>
@@ -411,7 +411,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Period" slicecount="1" values="1.25">
+   <PIN pinname="Period" slicecount="1" values="8">
    </PIN>
    </NODE>
    <NODE systemname="Blend (EX9.RenderState)" nodename="Blend (EX9.RenderState)" componentmode="Hidden" id="113">
@@ -525,7 +525,7 @@
    <NODE systemname="HSV (Color Join)" nodename="HSV (Color Join)" componentmode="Hidden" id="173">
    <BOUNDS type="Node" left="19305" top="8610" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Hue" visible="1" slicecount="512" values="0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.55">
+   <PIN pinname="Hue" visible="1" slicecount="512" values="0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21">
    </PIN>
    <PIN pinname="Saturation" slicecount="1" values="0.74">
    </PIN>
@@ -537,9 +537,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="174">
-   <BOUNDS type="Node" left="10185" top="5415" width="100" height="100">
+   <BOUNDS type="Node" left="11175" top="5700" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="10185" top="5415" width="2655" height="645">
+   <BOUNDS type="Box" left="11175" top="5700" width="2655" height="645">
    </BOUNDS>
    <PIN pinname="Color Input" visible="1">
    </PIN>
@@ -567,7 +567,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="-1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="176" srcpinname="Y Output Value" dstnodeid="175" dstpinname="Input 1">
@@ -899,9 +899,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="189">
-   <BOUNDS type="Node" left="390" top="17670" width="100" height="100">
+   <BOUNDS type="Node" left="390" top="13170" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="390" top="17670" width="1605" height="6150">
+   <BOUNDS type="Box" left="390" top="13170" width="945" height="2505">
    </BOUNDS>
    <PIN pinname="Columns" slicecount="1" values="1">
    </PIN>
@@ -931,9 +931,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="190">
-   <BOUNDS type="Node" left="2205" top="12885" width="100" height="100">
+   <BOUNDS type="Node" left="1875" top="13395" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2205" top="12885" width="1875" height="5445">
+   <BOUNDS type="Box" left="1875" top="13395" width="1050" height="2280">
    </BOUNDS>
    <PIN pinname="Columns" slicecount="1" values="1">
    </PIN>
@@ -1095,9 +1095,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="201">
-   <BOUNDS type="Node" left="2250" top="10095" width="100" height="100">
+   <BOUNDS type="Node" left="3780" top="10050" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2250" top="10095" width="810" height="2190">
+   <BOUNDS type="Box" left="3780" top="10050" width="810" height="2190">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="47" values="|Best in quality |,|That&apos;s the Mervis guarantee |,|Born in South Africa |,|Diamond mining&apos;s in our blood |,|Polished to perfection |,|Straight from our collection |,|Make the right selection every time |,,|From factory to finger |,|From finger to her heart |,|Show her that you&apos;ll never be apart |,|Excavation underground |,|Ken is mining two miles down |,|Brother Zed is on the phone:|,|Twenty tons of rock for every stone|,,,|Born in South Africa |,|Diamond mining&apos;s in our blood |,|Polished to perfection |,|Straight from our collection |,|Make the right selection every time |,| .|,|From factory to finger |,|From finger to her heart |,|Show her that you&apos;ll never be apart |,|Excavation underground |,|Ken is mining two miles down |,|Brother Zed is on the phone:|,|Twenty tons of rock for every stone|,|Best in quality |,|That&apos;s the Mervis guarantee |,|Born in South Africa |,|Diamond mining&apos;s in our blood |,|Polished to perfection |,|Straight from our collection |,|Make the right selection every time |,| .|,|From factory to finger |,|From finger to her heart |,|Show her that you&apos;ll never be apart |,|Excavation underground |,|Ken is mining two miles down |,|Brother Zed is on the phone:|,|Twenty tons of rock for every stone|,|Best in quality |,|That&apos;s the Mervis guarantee |">
    </PIN>
@@ -1129,7 +1129,7 @@
    </PIN>
    <PIN pinname="Size" slicecount="1" values="5">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|The Autophobe|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="207">
@@ -1151,9 +1151,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="217">
-   <BOUNDS type="Node" left="4290" top="17655" width="100" height="100">
+   <BOUNDS type="Node" left="4125" top="20205" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4290" top="17655" width="1935" height="7200">
+   <BOUNDS type="Box" left="4125" top="20205" width="1935" height="7200">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="60" values="| |,|Three thousand meters below the surface is my home|,|The common jellyfish, and several macro­organisms |,|We have a saying here, where light becomes a memory:|,|Your eyes adjust quite nicely after a couple of years. |,|Of course you know the ocean scene, squids a­floating by |,|Hidden beaks and tentacle feets and little tiny jelly eyes |,|They have a purpose, you know, a reason to stay alive |,|They&apos;re the food of viperfish|,|Chauliodus macouni |,Dive,|Dive with me |,|Check out this submersibility |,Breathe,|Breathe with me |,|From a tank|,|While we sink|,|Into the sea|,|YO, HO!|,|YO, HO!|,|Deeper I sink, and pitcher it&apos;s black,|,|the outer lights are activated|,|Illuminating a world which has never been illuminated |,|A sweeping forest of giant tube worms fills my eyes |,|And there dart about one thousand Chambered Nautili |,|With a swish, a Grenadier Fish bites a little glowy thing |,|It&apos;s violently slain by an angler,|,|Melanocetus johnsoni|,|Here&apos;s an interesting specimen,|,|Vampyroteuthis infernalis |,|That means the |,|Vampire Squid from Hell|,Dive,|Dive with me |,|Check out this submersibility |,Breathe,|Breathe with me |,|From a tank|,|While we sink|,|Into the sea|,|YO, HO!|,|YO, HO!|,,Dive,|Dive with me |,|Check out this submersibility |,Breathe,|Breathe with me |,|From a tank|,|While we sink|,|Into the Sea|,,,,,,,,,">
    </PIN>
@@ -1307,9 +1307,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="241">
-   <BOUNDS type="Node" left="3195" top="10065" width="100" height="100">
+   <BOUNDS type="Node" left="4875" top="10080" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3195" top="10065" width="1035" height="2085">
+   <BOUNDS type="Box" left="4875" top="10080" width="1035" height="2085">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="35" values="| |,,|Here I am |,|Just a cog, all by myself |,|Here I am |,|And here I go |,|Watch me now |,|Watch me now |,|I hope you like me |,,|They call me cog|,|I just fit in|,|Like a cog|,|It’s my only job|,,|With my friends |,|Just a cog with all my friends |,|With my friends |,|Party on |,|Look like me |,|Act like me |,|I hope they like me |,,|Generation cog |,|People like me |,|Let me call you cog |,|It&apos;s my only job |,,|I need you |,|I can&apos;t think, I&apos;m just a cog |,|Without you |,|I can&apos;t function|,,,">
    </PIN>
@@ -1329,9 +1329,9 @@
    </PIN>
    </NODE>
    <NODE id="211" systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox">
-   <BOUNDS type="Box" width="1155" height="2070" left="4485" top="10140">
+   <BOUNDS type="Box" width="1155" height="2070" left="315" top="9960">
    </BOUNDS>
-   <BOUNDS type="Node" left="4485" top="10140" width="100" height="100">
+   <BOUNDS type="Node" left="315" top="9960" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="40" values="| |,|Six thousand years ago|,|the world was nothing like the one we know. |,|There were no planes or trains or even cars |,|we rode the backs of dinosaurs.|,|Way back,|,|when Earth was young |,|we lived among |,|those noble beasts|,|we lived in peace with dinosaurs.|,|Behemoth and Leviathan|,|and the Dragons, |,|they roamed the fields|,|for real|,|and it was very good. |,|Found them|,|and gave them names |,|and made them tame, |,|it was a paradise of man and dinosaur!|,|Lord, give me a home |,|where the brontosaurus roam.|,|Lord, please close my mind |,|to science, the bane of mankind.|,|Way back,|,|when Earth was young |,|we lived among |,|those noble beasts|,|we lived in peace with dinosaurs.|,|Behemoth and Leviathan|,|and the Dragons, |,|they roamed the fields|,|for real|,|and it was very good.|,|Found them|,|and gave them names |,|and made them tame, |,|it was a paradise of man and dinosaur! |,,,">
    </PIN>
@@ -1351,9 +1351,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="242">
-   <BOUNDS type="Node" left="315" top="13410" width="100" height="100">
+   <BOUNDS type="Node" left="18960" top="18180" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="315" top="13410" width="1470" height="3195">
+   <BOUNDS type="Box" left="18960" top="18180" width="1470" height="3195">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="47" values="|There&apos;s no more room in our skeleton crew!|,,|Avast ye, barkeep, tis our last night ashore|,|Will our last piece of gold afford us one more?|,|A flagon of ale before we set sail|,|And a bottle of rum for me and me chum|,|Shiver me timbers and rattle me bones|,|Untangle the cables and plug in the &apos;phones|,|Go string up the axes and tune them up tight|,|It sounds like we&apos;ll be first to go out tonight|,,|There&apos;s no more room in our skeleton crew|,|It&apos;s just us few, it&apos;s just us few|,|There&apos;s no more room in our skeleton crew|,|It&apos;s just us few, it&apos;s just us two|,|There&apos;s no more room in our skeleton crew|,,|We shout through the tempest without sound or sight|,|Though deafened by silence and blinded by light|,|We&apos;ll weather the storm without losing face|,|and vow that we&apos;ll never return to this place|,,|There&apos;s no more room in our skeleton crew|,|It&apos;s just us few, it&apos;s just us few|,|There&apos;s no more room in our skeleton crew|,|It&apos;s just us few, it&apos;s just us two|,|There&apos;s no more room in our skeleton crew|,,|We stay at our posts though the sun she doth roast|,|Though the wind she doth bite, we&apos;ll do what is right|,|Until ravenous gulls pluck the eyes from our skulls|,|We dance with delight though there&apos;s no end in sight|,|We do what we can, we love what we do|,|We do what we must to steer our ship true|,|Though our bones turn to dust, our cannons may rust|,|Oh, the legends they&apos;ll tell of our skeleton crew|,,|There&apos;s no more room in our skeleton crew|,|It&apos;s just us few, it&apos;s just us few|,|There&apos;s no more room in our skeleton crew|,|It&apos;s just us few, it&apos;s just us two|,|There&apos;s no more room in our skeleton crew|,|There&apos;s no more room in our skeleton crew|,|It&apos;s just us few|,|It&apos;s just us two |,,">
    </PIN>
@@ -1371,9 +1371,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="243">
-   <BOUNDS type="Node" left="180" top="9975" width="100" height="100">
+   <BOUNDS type="Node" left="1635" top="9750" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="180" top="9975" width="1920" height="2955">
+   <BOUNDS type="Box" left="1635" top="9750" width="1920" height="2955">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="70" values="|Up before dawn, before the sun|,|I drop my line in and wait|,|Bass, take a look at blood worms on hook|,|Those bastards will fall for the bait|,|Been out on the bay for dang near all day|,|Haven’t had me one single bite|,|Earning vacation pay and I’m here to stay|,|Don’t care if it takes me all night|,|Thank god I’m livin’ in a wet county|,|Wishin’ that a fish’ll come to me worth mounting|,|On my kitchen wall|,|Next to that picture of Pa|,|Got my fishin&apos; line in hand and my gal in the other|,|Finished my beer baby grab me another|,|Make it a cool one|,|Check if the mountains are blue, hon|,|Fill the bed of my truck with gravel and stones|,|Diesel in my blood and steel in my bones|,|I thank god for this wet county|,|All hands on deck, come over and check|,|This fighter I’ve got on my line|,|Run over and get my granddaddy&apos;s net|,|This bastard soon will be mine|,|I finally win|,|I reel ‘er in|,|But it ain’t fish, it’s a log|,|I guess I was tricked, it’s just an old stick|,|At least we’ll play fetch with my dog|,|Thank god I’m livin&apos; in a wet county|,|Wishing that a fish will come to me worth mounting|,|On my kitchen wall|,|Next to that picture of Ma|,|Got my fishin&apos; line in hand and my gal in the other|,|Finished my beer baby grab me another|,|Make it a cool one|,|Check if the mountains are blue, hon|,|Fill the bed of my truck with gravel and stones|,|Diesel in my blood and steel in my bones|,|I thank god for this wet county|,|Cut them at the gill and fire up the grill|,|I hope eat your fill, kick back and chill|,|Baby, please don’t go, sure, we can take it slow|,|But if this is the end then I’m glad you brought your friends|,|Thank god I’m livin&apos; in a wet county|,|Wishing that a fish will come to me worth mounting|,|On my kitchen wall|,|Next to that picture of Paul|,|Got my fishin&apos; line in hand and my gal in the other|,|Finished my beer baby grab me another|,|Make it a cool one|,|Check if the mountains are blue, hon|,|Fill the bed of my truck with gravel and stones|,|Diesel in my blood and steel in my bones|,|I thank god for this wet county|,,,,,,,,,,,,,,,,">
    </PIN>
@@ -1410,10 +1410,10 @@
    </LINK>
    <LINK srcnodeid="118" srcpinname="Y Output Value" dstnodeid="120" dstpinname="Spread Count">
    </LINK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="FullScreen" id="244">
-   <BOUNDS type="Node" left="765" top="4260" width="100" height="100">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="244" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="9570" top="8025" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="765" top="4260" width="2400" height="1800">
+   <BOUNDS type="Box" left="9570" top="8025" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="27240" top="1950" width="6240" height="5085">
    </BOUNDS>
@@ -1438,6 +1438,22 @@
    </LINK>
    <LINK srcnodeid="244" srcpinname="Left Button" dstnodeid="139" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="190" srcpinname="Output String" dstnodeid="51" dstpinname="Input">
+   <LINK srcnodeid="234" srcpinname="Output String" dstnodeid="51" dstpinname="Input">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="245" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8940" top="6930" width="2310" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8940" top="6930" width="2340" height="1020">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Alt+1: windowed&cr;&lf;Alt+2: boxed&cr;&lf;Alt+3: hidden&cr;&lf;Alt+Enter: fullscreen|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="8">
+   </PIN>
+   </NODE>
    </PATCH>

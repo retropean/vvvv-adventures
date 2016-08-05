@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\slow_motion_vid\base_patch.v4p" systemname="base_patch" filename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\slow_motion_vid\base_patch.v4p" scrollx="1590" scrolly="1080">
-   <BOUNDS type="Window" left="-24615" top="480" width="25320" height="15540">
+   <PATCH nodename="C:\Users\Eric\Documents\GitHub\vvvv-adventures\slow_motion_vid\base_patch.v4p" systemname="base_patch" filename="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\slow_motion_vid\base_patch.v4p" scrollx="1080" scrolly="5250">
+   <BOUNDS type="Window" left="4095" top="600" width="24180" height="13680">
    </BOUNDS>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="38">
    <BOUNDS type="Node" left="15915" top="7830" width="1500" height="270">
@@ -27,7 +27,7 @@
    </PIN>
    <PIN pinname="Left Button" visible="1">
    </PIN>
-   <PIN pinname="Fullscreen Format" slicecount="1" values="R5G6B5">
+   <PIN pinname="Fullscreen Format" slicecount="1" values="X8R8G8B8">
    </PIN>
    <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
    </PIN>
@@ -339,7 +339,7 @@
    </BOUNDS>
    <PIN pinname="Output Enum" visible="1">
    </PIN>
-   <PIN pinname="Input Enum" slicecount="1" values="|Microphone (Realtek High Defini|">
+   <PIN pinname="Input Enum" slicecount="1" values="|Microphone Array (Realtek High Definition Audio)|">
    </PIN>
    </NODE>
    <LINK dstnodeid="195" dstpinname="Audio Driver" srcnodeid="193" srcpinname="Output Enum">
@@ -379,11 +379,11 @@
    <LINK srcnodeid="174" srcpinname="Color Output" dstnodeid="38" dstpinname="Background Color">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="239" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="3825" top="8025" width="7725" height="240">
+   <BOUNDS type="Box" left="3945" top="8010" width="7725" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3825" top="8025" width="0" height="0">
+   <BOUNDS type="Node" left="3945" top="8010" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="C:\Users\Lenovo\Desktop\vvvv_45beta34.2_x64\vvvv-adventures\slow_motion_vid\hamster_byyear.xlsx">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="C:\Users\Eric\Documents\GitHub\vvvv-adventures\slow_motion_vid\hamster_byyear.xlsx">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -399,9 +399,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="238" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="12417" top="9678" width="480" height="480">
+   <BOUNDS type="Box" left="7782" top="8898" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="12417" top="9678" width="0" height="0">
+   <BOUNDS type="Node" left="7782" top="8898" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -421,9 +421,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="237" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7620" top="10962" width="480" height="240">
+   <BOUNDS type="Box" left="7650" top="10752" width="480" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7620" top="10962" width="0" height="0">
+   <BOUNDS type="Node" left="7650" top="10752" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -466,36 +466,10 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="ExcelReader1 (Value)" filename="%VVVV%\vvvvContributions\plugins\ValueExcelReader1\ValueExcelReader1.csproj" nodename="ExcelReader1 (Value)" componentmode="Hidden" id="234">
-   <BOUNDS type="Node" left="6399" top="11415" width="4905" height="270">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="workbook" visible="1" slicecount="1" values="hamster_final.csv">
-   </PIN>
-   <PIN pinname="Row" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Clmn" visible="1" slicecount="49" values="2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2">
-   </PIN>
-   <PIN pinname="Sheet" visible="1">
-   </PIN>
-   <PIN pinname="Read" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Load" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Loaded" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="237" srcpinname="Y Output Value" dstnodeid="234" dstpinname="Sheet">
-   </LINK>
-   <LINK srcnodeid="234" srcpinname="Output" dstnodeid="236" dstpinname="Input String">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="233" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8814" top="10935" width="645" height="240">
+   <BOUNDS type="Box" left="8739" top="10920" width="645" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8814" top="10935" width="0" height="0">
+   <BOUNDS type="Node" left="8739" top="10920" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4">
    </PIN>
@@ -528,12 +502,8 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="232" srcpinname="Y Output Value" dstnodeid="234" dstpinname="Clmn">
-   </LINK>
-   <LINK srcnodeid="235" srcpinname="Y Output Value" dstnodeid="234" dstpinname="Read">
-   </LINK>
    <NODE systemname="Counter (Animation)" nodename="Counter (Animation)" componentmode="Hidden" id="231">
-   <BOUNDS type="Node" left="8799" top="10485" width="100" height="100">
+   <BOUNDS type="Node" left="8739" top="10110" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -545,11 +515,15 @@
    </PIN>
    <PIN pinname="Underflow" visible="1">
    </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="230" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8799" top="9510" width="480" height="480">
+   <BOUNDS type="Box" left="8754" top="9210" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="8799" top="9510" width="0" height="0">
+   <BOUNDS type="Node" left="8754" top="9210" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -569,8 +543,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="230" srcpinname="Y Output Value" dstnodeid="231" dstpinname="Up">
-   </LINK>
-   <LINK srcnodeid="230" srcpinname="Y Output Value" dstnodeid="238" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="Metronom (Animation)" filename="%VVVV%\lib\nodes\modules\Animation\Metronom (Animation).v4p" nodename="Metronom (Animation)" componentmode="Hidden" id="229">
    <BOUNDS type="Node" left="11499" top="9045" width="100" height="100">
@@ -611,9 +583,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="243" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="12408" top="12465" width="1170" height="270">
+   <BOUNDS type="Box" left="12348" top="12435" width="1170" height="270">
    </BOUNDS>
-   <BOUNDS type="Node" left="12408" top="12465" width="0" height="0">
+   <BOUNDS type="Node" left="12348" top="12435" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -626,34 +598,6 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="ExcelReader1 (Value)" filename="%VVVV%\vvvvContributions\plugins\ValueExcelReader1\ValueExcelReader1.csproj" nodename="ExcelReader1 (Value)" componentmode="Hidden" id="242">
-   <BOUNDS type="Node" left="6420" top="12270" width="4905" height="270">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="workbook" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Row" visible="1" slicecount="6" values="16,16,16,16,16,16">
-   </PIN>
-   <PIN pinname="Clmn" visible="1" slicecount="49" values="2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2">
-   </PIN>
-   <PIN pinname="Sheet" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Read" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Load" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Loaded" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="242" srcpinname="Output" dstnodeid="243" dstpinname="Input String">
-   </LINK>
-   <LINK srcnodeid="237" srcpinname="Y Output Value" dstnodeid="242" dstpinname="Sheet">
-   </LINK>
-   <LINK srcnodeid="233" srcpinname="Y Output Value" dstnodeid="242" dstpinname="Row">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="244" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="10065" top="11790" width="645" height="240">
    </BOUNDS>
@@ -672,12 +616,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="244" srcpinname="Y Output Value" dstnodeid="242" dstpinname="Clmn">
-   </LINK>
-   <LINK srcnodeid="235" srcpinname="Y Output Value" dstnodeid="242" dstpinname="Read">
-   </LINK>
-   <LINK srcnodeid="239" srcpinname="Output String" dstnodeid="242" dstpinname="workbook">
-   </LINK>
    <NODE id="245" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Box" left="10065" top="12750" width="645" height="240">
    </BOUNDS>
@@ -756,38 +694,6 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <NODE id="246" systemname="ExcelReader1 (Value)" filename="%VVVV%\vvvvContributions\plugins\ValueExcelReader1\ValueExcelReader1.csproj" nodename="ExcelReader1 (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="6420" top="13110" width="4905" height="270">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1" pintype="Output">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="workbook" visible="1" slicecount="1" pintype="Input" values="||">
-   </PIN>
-   <PIN pinname="Row" visible="1" slicecount="6" pintype="Input" values="16,16,16,16,16,16">
-   </PIN>
-   <PIN pinname="Clmn" visible="1" slicecount="49" pintype="Input" values="2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2">
-   </PIN>
-   <PIN pinname="Sheet" visible="1" slicecount="1" pintype="Input" values="1">
-   </PIN>
-   <PIN pinname="Read" visible="1" slicecount="1" pintype="Input" values="0">
-   </PIN>
-   <PIN pinname="Load" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Loaded" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="360" top="0" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Window Handle" pintype="Output">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
    <NODE id="247" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Box" left="12408" top="13305" width="1170" height="270">
    </BOUNDS>
@@ -829,7 +735,7 @@
    </PIN>
    <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Input String" pintype="Input" visible="1">
+   <PIN pinname="Input String" pintype="Input" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Output String" pintype="Output" visible="1">
    </PIN>
@@ -838,18 +744,6 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="246" srcpinname="Output" dstnodeid="247" dstpinname="Input String">
-   </LINK>
-   <LINK srcnodeid="245" srcpinname="Y Output Value" dstnodeid="246" dstpinname="Clmn">
-   </LINK>
-   <LINK srcnodeid="235" srcpinname="Y Output Value" dstnodeid="246" dstpinname="Read">
-   </LINK>
-   <LINK srcnodeid="233" srcpinname="Y Output Value" dstnodeid="246" dstpinname="Row">
-   </LINK>
-   <LINK srcnodeid="237" srcpinname="Y Output Value" dstnodeid="246" dstpinname="Sheet">
-   </LINK>
-   <LINK srcnodeid="239" srcpinname="Output String" dstnodeid="246" dstpinname="workbook">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="251" systemname="IOBox (String)">
    <BOUNDS type="Box" left="12408" top="14100" width="1170" height="270">
    </BOUNDS>
@@ -866,30 +760,6 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="ExcelReader1 (Value)" filename="%VVVV%\vvvvContributions\plugins\ValueExcelReader1\ValueExcelReader1.csproj" nodename="ExcelReader1 (Value)" componentmode="Hidden" id="250">
-   <BOUNDS type="Node" left="6420" top="13905" width="4905" height="270">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="workbook" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Row" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Clmn" visible="1" slicecount="49" values="2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2">
-   </PIN>
-   <PIN pinname="Sheet" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Read" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Load" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Loaded" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="250" srcpinname="Output" dstnodeid="251" dstpinname="Input String">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="249" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="10065" top="13425" width="645" height="240">
    </BOUNDS>
@@ -908,20 +778,10 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="249" srcpinname="Y Output Value" dstnodeid="250" dstpinname="Clmn">
-   </LINK>
-   <LINK srcnodeid="237" srcpinname="Y Output Value" dstnodeid="250" dstpinname="Sheet">
-   <LINKPOINT x="7695" y="13860">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="239" srcpinname="Output String" dstnodeid="250" dstpinname="workbook">
-   <LINKPOINT x="4928" y="13785">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="255" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="12378" top="15150" width="1170" height="270">
+   <BOUNDS type="Box" left="12108" top="15615" width="1170" height="270">
    </BOUNDS>
-   <BOUNDS type="Node" left="12378" top="15150" width="0" height="0">
+   <BOUNDS type="Node" left="12108" top="15615" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -934,30 +794,6 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="ExcelReader1 (Value)" filename="%VVVV%\vvvvContributions\plugins\ValueExcelReader1\ValueExcelReader1.csproj" nodename="ExcelReader1 (Value)" componentmode="Hidden" id="254">
-   <BOUNDS type="Node" left="6390" top="14955" width="4905" height="270">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="workbook" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Row" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Clmn" visible="1" slicecount="49" values="2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2">
-   </PIN>
-   <PIN pinname="Sheet" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Read" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Load" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Loaded" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="254" srcpinname="Output" dstnodeid="255" dstpinname="Input String">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="253" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="10035" top="14475" width="645" height="240">
    </BOUNDS>
@@ -976,26 +812,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="253" srcpinname="Y Output Value" dstnodeid="254" dstpinname="Clmn">
-   </LINK>
-   <LINK srcnodeid="237" srcpinname="Y Output Value" dstnodeid="254" dstpinname="Sheet">
-   </LINK>
-   <LINK srcnodeid="239" srcpinname="Output String" dstnodeid="254" dstpinname="workbook">
-   <LINKPOINT x="4778" y="14475">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="235" srcpinname="Y Output Value" dstnodeid="250" dstpinname="Read">
-   </LINK>
-   <LINK srcnodeid="235" srcpinname="Y Output Value" dstnodeid="254" dstpinname="Read">
-   </LINK>
-   <LINK srcnodeid="239" srcpinname="Output String" dstnodeid="234" dstpinname="workbook">
-   </LINK>
-   <LINK srcnodeid="233" srcpinname="Y Output Value" dstnodeid="250" dstpinname="Row">
-   </LINK>
-   <LINK srcnodeid="233" srcpinname="Y Output Value" dstnodeid="234" dstpinname="Row">
-   </LINK>
-   <LINK srcnodeid="233" srcpinname="Y Output Value" dstnodeid="254" dstpinname="Row">
-   </LINK>
    <NODE systemname="RGB (Color Join)" nodename="RGB (Color Join)" componentmode="Hidden" id="256">
    <BOUNDS type="Node" left="14835" top="13860" width="2055" height="270">
    </BOUNDS>
@@ -1186,4 +1002,194 @@
    <BOUNDS type="Node" left="22515" top="6510" width="100" height="100">
    </BOUNDS>
    </NODE>
+   <LINK srcnodeid="231" srcpinname="Output" dstnodeid="237" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="ExcelReader1 (Value)" filename="%VVVV%\lib\vvvv_contributions\plugins\ValueExcelReader1\ValueExcelReader1.csproj" nodename="ExcelReader1 (Value)" componentmode="Hidden" id="234">
+   <BOUNDS type="Node" left="6399" top="11535" width="4905" height="270">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="workbook" visible="1" slicecount="1" values="hamster_final.csv">
+   </PIN>
+   <PIN pinname="Row" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Clmn" visible="1" slicecount="49" values="2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2">
+   </PIN>
+   <PIN pinname="Sheet" visible="1">
+   </PIN>
+   <PIN pinname="Read" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Load" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Loaded" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="237" srcpinname="Y Output Value" dstnodeid="234" dstpinname="Sheet">
+   </LINK>
+   <LINK srcnodeid="234" srcpinname="Output" dstnodeid="236" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="232" srcpinname="Y Output Value" dstnodeid="234" dstpinname="Clmn">
+   </LINK>
+   <LINK srcnodeid="235" srcpinname="Y Output Value" dstnodeid="234" dstpinname="Read">
+   </LINK>
+   <LINK srcnodeid="239" srcpinname="Output String" dstnodeid="234" dstpinname="workbook">
+   </LINK>
+   <LINK srcnodeid="233" srcpinname="Y Output Value" dstnodeid="234" dstpinname="Row">
+   </LINK>
+   <NODE systemname="ExcelReader1 (Value)" filename="%VVVV%\lib\vvvv_contributions\plugins\ValueExcelReader1\ValueExcelReader1.csproj" nodename="ExcelReader1 (Value)" componentmode="Hidden" id="242">
+   <BOUNDS type="Node" left="6420" top="12270" width="4905" height="270">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="workbook" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Row" visible="1" slicecount="6" values="16,16,16,16,16,16">
+   </PIN>
+   <PIN pinname="Clmn" visible="1" slicecount="49" values="2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2">
+   </PIN>
+   <PIN pinname="Sheet" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Read" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Load" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Loaded" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="242" srcpinname="Output" dstnodeid="243" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="237" srcpinname="Y Output Value" dstnodeid="242" dstpinname="Sheet">
+   </LINK>
+   <LINK srcnodeid="233" srcpinname="Y Output Value" dstnodeid="242" dstpinname="Row">
+   </LINK>
+   <LINK srcnodeid="244" srcpinname="Y Output Value" dstnodeid="242" dstpinname="Clmn">
+   </LINK>
+   <LINK srcnodeid="235" srcpinname="Y Output Value" dstnodeid="242" dstpinname="Read">
+   </LINK>
+   <LINK srcnodeid="239" srcpinname="Output String" dstnodeid="242" dstpinname="workbook">
+   </LINK>
+   <NODE id="246" systemname="ExcelReader1 (Value)" filename="%VVVV%\lib\vvvv_contributions\plugins\ValueExcelReader1\ValueExcelReader1.csproj" nodename="ExcelReader1 (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="6420" top="13110" width="4905" height="270">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="workbook" visible="1" slicecount="1" pintype="Input" values="||">
+   </PIN>
+   <PIN pinname="Row" visible="1" slicecount="6" pintype="Input" values="16,16,16,16,16,16">
+   </PIN>
+   <PIN pinname="Clmn" visible="1" slicecount="49" pintype="Input" values="2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2">
+   </PIN>
+   <PIN pinname="Sheet" visible="1" slicecount="1" pintype="Input" values="1">
+   </PIN>
+   <PIN pinname="Read" visible="1" slicecount="1" pintype="Input" values="0">
+   </PIN>
+   <PIN pinname="Load" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Loaded" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="360" top="0" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="246" srcpinname="Output" dstnodeid="247" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="245" srcpinname="Y Output Value" dstnodeid="246" dstpinname="Clmn">
+   </LINK>
+   <LINK srcnodeid="235" srcpinname="Y Output Value" dstnodeid="246" dstpinname="Read">
+   </LINK>
+   <LINK srcnodeid="233" srcpinname="Y Output Value" dstnodeid="246" dstpinname="Row">
+   </LINK>
+   <LINK srcnodeid="237" srcpinname="Y Output Value" dstnodeid="246" dstpinname="Sheet">
+   </LINK>
+   <LINK srcnodeid="239" srcpinname="Output String" dstnodeid="246" dstpinname="workbook">
+   </LINK>
+   <NODE systemname="ExcelReader1 (Value)" filename="%VVVV%\lib\vvvv_contributions\plugins\ValueExcelReader1\ValueExcelReader1.csproj" nodename="ExcelReader1 (Value)" componentmode="Hidden" id="250">
+   <BOUNDS type="Node" left="6420" top="13905" width="4905" height="270">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="workbook" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Row" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Clmn" visible="1" slicecount="49" values="2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2">
+   </PIN>
+   <PIN pinname="Sheet" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Read" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Load" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Loaded" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="250" srcpinname="Output" dstnodeid="251" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="249" srcpinname="Y Output Value" dstnodeid="250" dstpinname="Clmn">
+   </LINK>
+   <LINK srcnodeid="237" srcpinname="Y Output Value" dstnodeid="250" dstpinname="Sheet">
+   <LINKPOINT x="7709" y="13755">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="239" srcpinname="Output String" dstnodeid="250" dstpinname="workbook">
+   <LINKPOINT x="4988" y="13777">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="235" srcpinname="Y Output Value" dstnodeid="250" dstpinname="Read">
+   </LINK>
+   <LINK srcnodeid="233" srcpinname="Y Output Value" dstnodeid="250" dstpinname="Row">
+   </LINK>
+   <NODE systemname="ExcelReader1 (Value)" filename="%VVVV%\lib\vvvv_contributions\plugins\ValueExcelReader1\ValueExcelReader1.csproj" nodename="ExcelReader1 (Value)" componentmode="Hidden" id="254">
+   <BOUNDS type="Node" left="6390" top="14955" width="4905" height="270">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="workbook" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Row" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Clmn" visible="1" slicecount="49" values="2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2">
+   </PIN>
+   <PIN pinname="Sheet" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Read" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Load" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Loaded" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="254" srcpinname="Output" dstnodeid="255" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="253" srcpinname="Y Output Value" dstnodeid="254" dstpinname="Clmn">
+   </LINK>
+   <LINK srcnodeid="237" srcpinname="Y Output Value" dstnodeid="254" dstpinname="Sheet">
+   </LINK>
+   <LINK srcnodeid="239" srcpinname="Output String" dstnodeid="254" dstpinname="workbook">
+   <LINKPOINT x="4838" y="14467">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="235" srcpinname="Y Output Value" dstnodeid="254" dstpinname="Read">
+   </LINK>
+   <LINK srcnodeid="233" srcpinname="Y Output Value" dstnodeid="254" dstpinname="Row">
+   </LINK>
+   <LINK srcnodeid="238" srcpinname="Y Output Value" dstnodeid="230" dstpinname="Y Input Value">
+   </LINK>
    </PATCH>

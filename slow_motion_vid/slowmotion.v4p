@@ -1,0 +1,225 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
+   <PATCH nodename="C:\Users\Eric\Documents\GitHub\vvvv-adventures\slow_motion_vid\slowmotion.v4p" systemname="slowmotion" filename="C:\Users\Eric\Documents\GitHub\vvvv-adventures\slow_motion_vid\slowmotion.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="-23175" top="1605" width="21690" height="10140">
+   </BOUNDS>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">
+   <BOUNDS type="Node" left="315" top="75" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="315" top="75" width="1890" height="2820">
+   </BOUNDS>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input String" slicecount="3" values="|SLOW MOTION|,SLOW,MOTION">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="183">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="lyrics">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="5">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (GDI)" nodename="Renderer (GDI)" componentmode="InAWindow" id="2">
+   <BOUNDS type="Node" left="17985" top="945" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="17985" top="945" width="8475" height="5265">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11640" top="5100" width="6120" height="4860">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Backbuffer Width" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Width" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Left Button" visible="1">
+   </PIN>
+   <PIN pinname="Right Button" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="7710" top="3225" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="5" dstpinname="Input">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="6">
+   <BOUNDS type="Node" left="7545" top="1005" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7545" top="1005" width="930" height="945">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Counter (Animation)" nodename="Counter (Animation)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="7545" top="2280" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Up" visible="1">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="51">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Up">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="5" dstpinname="Index">
+   </LINK>
+   <NODE systemname="Text (GDI)" nodename="Text (GDI)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="7950" top="5400" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Text" visible="1" slicecount="50" values="|This cat is a pig |,|has a girl who&apos;s a dog |,|but thinks she&apos;s a fox |,|The pig is a snake |,|Who pontificates |,|Harken, he&apos;s blessed &cr;&lf;|,|The fox is a mess &cr;&lf;The fox is a mess |,|A community chest |,|Yeah, she gets around |,|Her face is a cake &cr;&lf;|,|and when she gets baked |,|it melts to a frown |,|They take pictures of each other|,|taking pix of one another |,|There&apos;s some worms with no brains|,|who come out when it rains|,|And they squirm on the ground|,|til the birds come around |,|It summons the brood|,|putting chicks in the mood |,|A hawk sees the flock and swoops in on a hen|,|Dressing smart for one another|,|so they can undress each other|,|The weasel in mink always says what he thinks|,|till the skunk made a stink |,|The Rodents attack but the Varmints fight back|,|and fur starts to fly |,|Caught in the brawl|,|the dog tries to call out for the cat |,|Diving into the fray|,|he pulls her away|,|He just saved the day |,|They take pictures of each other|,|taking pix of one another|,,,,,,,,,,,,,,,,">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Y" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Height" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" visible="1" values="55">
+   </PIN>
+   <PIN pinname="Bold" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="Modern">
+   </PIN>
+   <PIN pinname="Pen Color" visible="1">
+   </PIN>
+   <PIN pinname="X" slicecount="1" values="0.02">
+   </PIN>
+   <PIN pinname="Antialiasing" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Italic" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Brush" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Layer" dstnodeid="2" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="16" dstpinname="Text">
+   </LINK>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="10710" top="5820" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Source Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Source Minimum" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="26.39">
+   </PIN>
+   <PIN pinname="Destination Maximum" slicecount="1" values="300.66">
+   </PIN>
+   <PIN pinname="Mapping" slicecount="1" values="Clamp">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y" dstnodeid="18" dstpinname="Input">
+   </LINK>
+   <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="19" exposed="1">
+   <BOUNDS type="Node" left="9645" top="7485" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9645" top="7485" width="4905" height="240">
+   </BOUNDS>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   <PIN pinname="Color Input" slicecount="2" values="|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Pen Color|">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Color Output" dstnodeid="16" dstpinname="Pen Color">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="20">
+   <BOUNDS type="Node" left="8865" top="3540" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8865" top="3540" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="26">
+   <BOUNDS type="Node" left="9165" top="3075" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Up Edge" dstnodeid="6" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Right Button" dstnodeid="20" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="27">
+   <BOUNDS type="Node" left="10755" top="6150" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10755" top="6150" width="2625" height="420">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|reattach for dynamic font size|">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="16" dstpinname="Size">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="28">
+   <BOUNDS type="Node" left="5070" top="5400" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5070" top="5400" width="795" height="240">
+   </BOUNDS>
+   </NODE>
+   </PATCH>
