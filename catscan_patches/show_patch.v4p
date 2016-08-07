@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\Eric\Documents\GitHub\vvvv-adventures\catscan_patches\show_3_v2.v4p" systemname="show_3_v2" filename="C:\Users\Eric\Documents\GitHub\vvvv-adventures\catscan_patches\show_3_v2.v4p" scrollx="0" scrolly="-360" locked="0">
-   <BOUNDS type="Window" left="375" top="855" width="36180" height="11250">
+   <PATCH nodename="C:\Users\Eric\Documents\GitHub\vvvv-adventures\catscan_patches\show_patch.v4p" systemname="show_patch" filename="C:\Users\Eric\Documents\GitHub\vvvv-adventures\catscan_patches\show_patch.v4p" scrollx="15" scrolly="720" locked="0">
+   <BOUNDS type="Window" left="-22410" top="1800" width="21180" height="11250">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">
    <BOUNDS type="Node" left="2040" top="20100" width="100" height="100">
@@ -103,7 +103,7 @@
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="51" hiddenwhenlocked="0">
    <BOUNDS type="Node" left="5535" top="5520" width="2325" height="270">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="54" values="| |,|She put me in a voodoo dollhouse|,|And she tied me to a tiny plastic chair|,|Which she keeps inside her voodoo dollhouse|,|With my photo and a locket of my hair|,|And I think that it might be a curse|,|Cause she’s stolen my heart and she put it in her purse |,|And I don&apos;t think that I am ever coming home|,,|Lights out, candles burning|,|My mind is racing, tummy turning |,|I hold my breath as she walks in|,|Sitting on needles and on pins |,|I never really wanted  |,|To be an independent person |,|Or in my dreams imagined |,|I’d be involved in such perversion  |,,,|Forcefed twisted tainted love |,|Dripping down in a mist from above |,|Darkness surrounds me |,|Her arms are wrapped around me |,|She egged me on |,|She made an omelette |,|She made my soul sick |,|Spiritual Vomit |,|She put me in a voodoo dollhouse|,|And she tied me to a tiny plastic chair|,|Which she keeps inside her voodoo dollhouse|,|With my photo and a locket of my hair|,|And she tells me that I might be the one |,|But I’m not about to argue when she&apos;s pointing the gun |,|And I don&apos;t think that I am ever coming home |,|She put me in a voodoo dollhouse|,|And she tied me to a tiny plastic chair|,|Which she keeps inside her voodoo dollhouse|,|With my photo and a locket of my hair|,|She melted my mind just like a svengali |,|She molded me into her own voodoo dolly |,|And I don&apos;t think that I am ever coming home |,|And I’m burning it down, down, down |,|Down, down, down, down|,|down, down|,down,,|Down, down, down, down|,down,|down, down, down|,down,,,,">
+   <PIN pinname="Input" visible="1" slicecount="42" values="| |,|new year, new tour |,|same songs, the same four |,|our music&apos;s stuck in limbo |,|sustained by high school bimbos |,|the drummer just quit |,|sick of preteen bullshit |,|our t-shirts on children |,|who lack the breasts to fill them |,|no one wants to be with you |,|when you&apos;re bald at 32 |,|no one wants to be your friend |,|when your youth is at an end |,|life is gonna get you down|,|and then you&apos;re 6 feet underground |,|you&apos;re half the man your father was |,|life is tough |,|and homework sucks! |,,|My credit&apos;s abysmal |,|My love life… |,|dismal |,|Taking prescriptions |,|for my gambling addiction |,|my fridge is barren |,|just like my ex-wife Karen |,|libido waning |,|with each pound that I&apos;m gaining |,|no reason left to be alive |,|when you&apos;re pushing 45 |,|and no one wants to be with you |,|when your life is half way through |,|life is gonna get you down |,|as the green leaves turn to brown |,|you&apos;re half the man you used to be |,|life is fucked! |,|and homework sucks|,,,,,">
    </PIN>
    <PIN pinname="Index" slicecount="1" visible="1" values="11">
    </PIN>
@@ -172,7 +172,7 @@
    </LINK>
    <LINK srcnodeid="44" srcpinname="Up Edge" dstnodeid="50" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="51" srcpinname="Output" dstnodeid="36" dstpinname="Text" linkstyle="VHV">
+   <LINK srcnodeid="51" srcpinname="Output" dstnodeid="36" dstpinname="Text" linkstyle="VHV" hiddenwhenlocked="1">
    <LINKPOINT x="7255" y="4060">
    </LINKPOINT>
    <LINKPOINT x="4115" y="4130">
@@ -181,7 +181,7 @@
    <LINK srcnodeid="19" srcpinname="Color Output" dstnodeid="36" dstpinname="Color">
    </LINK>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="78">
-   <BOUNDS type="Node" left="315" top="2085" width="100" height="100">
+   <BOUNDS type="Node" left="225" top="2145" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -198,7 +198,11 @@
    <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="36" srcpinname="Layer" dstnodeid="78" dstpinname="Layer 3">
+   <LINK srcnodeid="36" srcpinname="Layer" dstnodeid="78" dstpinname="Layer 3" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="5475" y="2395">
+   </LINKPOINT>
+   <LINKPOINT x="600" y="2420">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="Segment (DX9)" nodename="Segment (DX9)" componentmode="Hidden" id="123" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="9330" top="8565" width="1650" height="270">
@@ -369,9 +373,9 @@
    <LINK srcnodeid="112" srcpinname="Output" dstnodeid="116" dstpinname="Hue" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="123" srcpinname="Layer" dstnodeid="78" dstpinname="Layer 1" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="9360" y="5085">
+   <LINKPOINT x="9330" y="5105">
    </LINKPOINT>
-   <LINKPOINT x="345" y="5085">
+   <LINKPOINT x="285" y="5125">
    </LINKPOINT>
    </LINK>
    <NODE systemname="HSV (Color Join)" nodename="HSV (Color Join)" componentmode="Hidden" id="127" hiddenwhenlocked="1">
@@ -392,20 +396,6 @@
    <LINKPOINT x="12720" y="7395">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Counter (Animation)" nodename="Counter (Animation)" componentmode="Hidden" id="140" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="11310" top="4530" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Up" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Reset" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="5000">
-   </PIN>
-   <PIN pinname="Increment" slicecount="1" values="1">
-   </PIN>
-   </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="139" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="11310" top="3495" width="100" height="100">
    </BOUNDS>
@@ -430,15 +420,7 @@
    <PIN pinname="Down Edge" visible="-1" pintype="Output">
    </PIN>
    </NODE>
-   <LINK srcnodeid="139" srcpinname="Y Output Value" dstnodeid="138" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="138" srcpinname="Up Edge" dstnodeid="140" dstpinname="Up">
-   </LINK>
-   <LINK srcnodeid="140" srcpinname="Output" dstnodeid="118" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="11360" y="5118">
-   </LINKPOINT>
-   <LINKPOINT x="11740" y="5128">
-   </LINKPOINT>
+   <LINK srcnodeid="139" srcpinname="Y Output Value" dstnodeid="138" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="114" srcpinname="Output" dstnodeid="115" dstpinname="Phase">
    </LINK>
@@ -565,9 +547,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="188">
-   <BOUNDS type="Node" left="2835" top="6210" width="100" height="100">
+   <BOUNDS type="Node" left="3015" top="7725" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2835" top="6210" width="1170" height="3270">
+   <BOUNDS type="Box" left="3015" top="7725" width="1170" height="3270">
    </BOUNDS>
    <PIN pinname="Columns" slicecount="1" values="1">
    </PIN>
@@ -597,9 +579,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="189">
-   <BOUNDS type="Node" left="210" top="12285" width="100" height="100">
+   <BOUNDS type="Node" left="1665" top="14565" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="210" top="12285" width="1185" height="3900">
+   <BOUNDS type="Box" left="1665" top="14565" width="1185" height="3900">
    </BOUNDS>
    <PIN pinname="Columns" slicecount="1" values="1">
    </PIN>
@@ -629,9 +611,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="190">
-   <BOUNDS type="Node" left="1515" top="11850" width="100" height="100">
+   <BOUNDS type="Node" left="3030" top="14595" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1515" top="11850" width="3945" height="6525">
+   <BOUNDS type="Box" left="3030" top="14595" width="1005" height="4605">
    </BOUNDS>
    <PIN pinname="Columns" slicecount="1" values="1">
    </PIN>
@@ -661,9 +643,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="198">
-   <BOUNDS type="Node" left="4155" top="6360" width="100" height="100">
+   <BOUNDS type="Node" left="4215" top="14520" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4155" top="6360" width="1425" height="3000">
+   <BOUNDS type="Box" left="4215" top="14520" width="1425" height="3000">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="47" visible="-1" pintype="Input" values="|Au Naturale|,,|Au Naturale |,,|I worked at Whole Foods|,|Chopping heads off of fishes|,|Somehow I knew|,|This is not the job for me |,|Free my pets|,|Gave up meat|,|Then tried eating bugs |,|Made them sad |,|And I felt bad|,|So I gave that up |,|Quit my job|,|Sold my car|,|Burned down my house |,|Along with all my clothes |,|Made my mailbox into a birdhouse |,|For a family of crows |,|Au Naturale |,ˁ˚ᴥ˚ˀ,|Au Naturale |,Ƹ̵̡Ӝ̵̨̄Ʒ,|I made a new home|,|On the peak of a mountain |,|I hurled my cellphone|,|Off the top of said mountain |,|I don&apos;t shave in my cave|,|Grew out my hair |,|My roommate&apos;s a bear|,|RENT WAS DUE A WEEK AGO|,|Hope he doesn’t maul me |,|I do yoga|,|Every morning at sunrise |,|Breakfast is fungus and a cold glass of milkweed |,|__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡||̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲||̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.___|,^ↀᴥↀ^,&apos;-&apos;_@_,,,,,|Chopping heads off of fishes|,|Somehow I knew|,|This is not the job for me |,|Free my pets|">
    </PIN>
@@ -697,9 +679,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="201">
-   <BOUNDS type="Node" left="2835" top="9645" width="100" height="100">
+   <BOUNDS type="Node" left="2940" top="11625" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2835" top="9645" width="1110" height="2325">
+   <BOUNDS type="Box" left="2940" top="11625" width="1110" height="2325">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="47" visible="-1" pintype="Input" values="|Best in quality |,|That&apos;s the Mervis guarantee |,|Born in South Africa |,|Diamond mining&apos;s in our blood |,|Polished to perfection |,|Straight from our collection |,|Make the right selection every time |,,|From factory to finger |,|From finger to her heart |,|Show her that you&apos;ll never be apart |,|Excavation underground |,|Ken is mining two miles down |,|Brother Zed is on the phone:|,|Twenty tons of rock for every stone|,,,|Born in South Africa |,|Diamond mining&apos;s in our blood |,|Polished to perfection |,|Straight from our collection |,|Make the right selection every time |,| .|,|From factory to finger |,|From finger to her heart |,|Show her that you&apos;ll never be apart |,|Excavation underground |,|Ken is mining two miles down |,|Brother Zed is on the phone:|,|Twenty tons of rock for every stone|,|Best in quality |,|That&apos;s the Mervis guarantee |,|Born in South Africa |,|Diamond mining&apos;s in our blood |,|Polished to perfection |,|Straight from our collection |,|Make the right selection every time |,| .|,|From factory to finger |,|From finger to her heart |,|Show her that you&apos;ll never be apart |,|Excavation underground |,|Ken is mining two miles down |,|Brother Zed is on the phone:|,|Twenty tons of rock for every stone|,|Best in quality |,|That&apos;s the Mervis guarantee |">
    </PIN>
@@ -775,9 +757,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="234">
-   <BOUNDS type="Node" left="210" top="6210" width="100" height="100">
+   <BOUNDS type="Node" left="240" top="7680" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="210" top="6210" width="1185" height="3150">
+   <BOUNDS type="Box" left="240" top="7680" width="1185" height="3150">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="55" visible="-1" pintype="Input" values="| |,|I took the day off and we&apos;re sticking to the plan|,|I can&apos;t come to the phone right now|,|I left a sticky with instructions on the fridge|,|I gotta swing by the house and grab my amulet|,| (THIS ADVENTURE&apos;S HAPPENING)|,|You&apos;ve got obligations|,|(THIS ADVENTURE&apos;S HAPPENING)|,|What&apos;s your explanation?|,|(THIS ADVENTURE&apos;S HAPPENING)|,|I&apos;m starting to lose my patience.|,|(THIS ADVENTURE&apos;S HAPPENING)|,|The idol burns with an ominous light|,|Tuck it in your cloak, friend, keep it out of sight|,|The wizard will appraise it and trade it for a map|,|Written in a language only spoken in the past|,|Can you fathom the fathoms deep in the caverns|,|Do you insist this abyss is amiss |,|Do you gape at the gaping great grotto|,|Or itch to pitch right into the ditch|,|(THIS ADVENTURE&apos;S HAPPENING)|,|You&apos;ve got obligations|,|(THIS ADVENTURE&apos;S HAPPENING)|,|What&apos;s your explanation?|,|(THIS ADVENTURE&apos;S HAPPENING)|,|I&apos;m starting to lose my patience.|,|(THIS ADVENTURE&apos;S HAPPENING)|,| |,|Steel meets skull with a sickening crack|,|The Mangeler&apos;s bones turn back into stones|,|The water recedes and path is revealed|,|The Serpent Lord&apos;s treasure horde is your’s|,|(THIS ADVENTURE&apos;S HAPPENING)|,|You&apos;ve got obligations|,|(THIS ADVENTURE&apos;S HAPPENING)|,|What&apos;s your explanation?|,|(THIS ADVENTURE&apos;S HAPPENING)|,|I&apos;m starting to lose my patience.|,|(THIS ADVENTURE&apos;S HAPPENING)|,|You open your door to that old familiar smell|,|Your apartment looks pretty much as you left it|,|452 work related emails|,|Here&apos;s my phone charger, where&apos;s my amulet? |,,,,,,,,,,,,">
    </PIN>
@@ -797,9 +779,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="236">
-   <BOUNDS type="Node" left="1470" top="6210" width="100" height="100">
+   <BOUNDS type="Node" left="1575" top="7935" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1470" top="6210" width="1215" height="2760">
+   <BOUNDS type="Box" left="1575" top="7935" width="1215" height="2760">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="55" visible="-1" pintype="Input" values="| |,|I’m going to call you by your government name|,|Call You By Your government name|,|Don&apos;t even try to beef with me|,|Stay anonymous like all my enemies|,|It’s just one of those things|,|where you think it’s ok|,|To start a beef with me|,|but that’s a big mistake|,|And at the end of the day,|,|I’m very sorry for you|,|You are an old old man|,|who&apos;s lost the spotlight, dude|,|You lost your relevance|,|and now you’re tryin&apos; to reclaim|,|The spotlight from my spotlight|,|but you&apos;re tired and lame|,|So that’s not gonna work|,|Ghost Dennis|,|You are gonna be done|,|Ghost Dennis|,| |,|I’m going to call you by your government name|,|Call you by your government name|,|Don&apos;t even try to beef with me|,|Stay anonymous like my enemies|,|In fact if you ever say anything|,|I will erase you from the album|,|I will erase you from the record books|,|And I&apos;ll erase you from the album|,| You are gonna be done,|,|You are my son,|,|which means you’ve got to listen to me   |,|I&apos;m your father, I said,|,|and I butter your bread,|,|Now do you understand me?|,|I’m sorry, I&apos;m not gonna to let this slide|,|And though I pity you|,|some punishment is what is required|,|I am expecting a written apology|,|Some contrition,|,|of your sorrows and your sadness, you see|,|I’m going to call you by your government name|,|Call you by your government  name|,|Life is no nintendo game|,|Don&apos;t you ever mention my name again|,|In fact if you ever say any thing|,|I will erase you from the album|,|I will erase you|,|from the record books|,|And I&apos;ll erase you from this album |,,,,">
    </PIN>
@@ -887,9 +869,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="241">
-   <BOUNDS type="Node" left="4680" top="9915" width="100" height="100">
+   <BOUNDS type="Node" left="270" top="14535" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4680" top="9915" width="1185" height="2160">
+   <BOUNDS type="Box" left="270" top="14535" width="1185" height="2160">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="35" visible="-1" pintype="Input" values="| |,,|Here I am |,|Just a cog, all by myself |,|Here I am |,|And here I go |,|Watch me now |,|Watch me now |,|I hope you like me |,,|They call me cog|,|I just fit in|,|Like a cog|,|It’s my only job|,,|With my friends |,|Just a cog with all my friends |,|With my friends |,|Party on |,|Look like me |,|Act like me |,|I hope they like me |,,|Generation cog |,|People like me |,|Let me call you cog |,|It&apos;s my only job |,,|I need you |,|I can&apos;t think, I&apos;m just a cog |,|Without you |,|I can&apos;t function|,,,">
    </PIN>
@@ -909,9 +891,9 @@
    </PIN>
    </NODE>
    <NODE id="211" systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox">
-   <BOUNDS type="Box" width="1155" height="2040" left="210" top="9645">
+   <BOUNDS type="Box" width="1155" height="2040" left="270" top="11580">
    </BOUNDS>
-   <BOUNDS type="Node" left="210" top="9645" width="100" height="100">
+   <BOUNDS type="Node" left="270" top="11580" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="40" visible="-1" pintype="Input" values="| |,|Six thousand years ago|,|the world was nothing like the one we know. |,|There were no planes or trains or even cars |,|we rode the backs of dinosaurs.|,|Way back,|,|when Earth was young |,|we lived among |,|those noble beasts|,|we lived in peace with dinosaurs.|,|Behemoth and Leviathan|,|and the Dragons, |,|they roamed the fields|,|for real|,|and it was very good. |,|Found them|,|and gave them names |,|and made them tame, |,|it was a paradise of man and dinosaur!|,|Lord, give me a home |,|where the brontosaurus roam.|,|Lord, please close my mind |,|to science, the bane of mankind.|,|Way back,|,|when Earth was young |,|we lived among |,|those noble beasts|,|we lived in peace with dinosaurs.|,|Behemoth and Leviathan|,|and the Dragons, |,|they roamed the fields|,|for real|,|and it was very good.|,|Found them|,|and gave them names |,|and made them tame, |,|it was a paradise of man and dinosaur! |,,,">
    </PIN>
@@ -951,9 +933,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="243">
-   <BOUNDS type="Node" left="1605" top="9345" width="100" height="100">
+   <BOUNDS type="Node" left="1620" top="11595" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1605" top="9345" width="1080" height="2340">
+   <BOUNDS type="Box" left="1620" top="11595" width="1080" height="2340">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="70" visible="-1" pintype="Input" values="|Up before dawn, before the sun|,|I drop my line in and wait|,|Bass, take a look at blood worms on hook|,|Those bastards will fall for the bait|,|Been out on the bay for dang near all day|,|Haven’t had me one single bite|,|Earning vacation pay and I’m here to stay|,|Don’t care if it takes me all night|,|Thank god I’m livin’ in a wet county|,|Wishin’ that a fish’ll come to me worth mounting|,|On my kitchen wall|,|Next to that picture of Pa|,|Got my fishin&apos; line in hand and my gal in the other|,|Finished my beer baby grab me another|,|Make it a cool one|,|Check if the mountains are blue, hon|,|Fill the bed of my truck with gravel and stones|,|Diesel in my blood and steel in my bones|,|I thank god for this wet county|,|All hands on deck, come over and check|,|This fighter I’ve got on my line|,|Run over and get my granddaddy&apos;s net|,|This bastard soon will be mine|,|I finally win|,|I reel ‘er in|,|But it ain’t fish, it’s a log|,|I guess I was tricked, it’s just an old stick|,|At least we’ll play fetch with my dog|,|Thank god I’m livin&apos; in a wet county|,|Wishing that a fish will come to me worth mounting|,|On my kitchen wall|,|Next to that picture of Ma|,|Got my fishin&apos; line in hand and my gal in the other|,|Finished my beer baby grab me another|,|Make it a cool one|,|Check if the mountains are blue, hon|,|Fill the bed of my truck with gravel and stones|,|Diesel in my blood and steel in my bones|,|I thank god for this wet county|,|Cut them at the gill and fire up the grill|,|I hope eat your fill, kick back and chill|,|Baby, please don’t go, sure, we can take it slow|,|But if this is the end then I’m glad you brought your friends|,|Thank god I’m livin&apos; in a wet county|,|Wishing that a fish will come to me worth mounting|,|On my kitchen wall|,|Next to that picture of Paul|,|Got my fishin&apos; line in hand and my gal in the other|,|Finished my beer baby grab me another|,|Make it a cool one|,|Check if the mountains are blue, hon|,|Fill the bed of my truck with gravel and stones|,|Diesel in my blood and steel in my bones|,|I thank god for this wet county|,,,,,,,,,,,,,,,,">
    </PIN>
@@ -972,7 +954,7 @@
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
    </NODE>
-   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="120">
+   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="120" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="9330" top="4920" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" slicecount="1" visible="1" values="1.14">
@@ -1022,7 +1004,7 @@
    <PIN pinname="Middle Button" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="78" srcpinname="Layer" dstnodeid="244" dstpinname="Layers">
+   <LINK srcnodeid="78" srcpinname="Layer" dstnodeid="244" dstpinname="Layers" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="174" srcpinname="Color Output" dstnodeid="244" dstpinname="Background Color">
    </LINK>
@@ -1039,9 +1021,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="245" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="165" top="615" width="2310" height="270">
+   <BOUNDS type="Node" left="180" top="420" width="2310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="165" top="615" width="1965" height="1020">
+   <BOUNDS type="Box" left="180" top="420" width="1965" height="1020">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Alt+1: windowed&cr;&lf;Alt+2: boxed&cr;&lf;Alt+3: hidden&cr;&lf;Alt+Enter: fullscreen|">
    </PIN>
@@ -1055,9 +1037,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="246" systemname="IOBox (String)" hiddenwhenlocked="0">
-   <BOUNDS type="Node" left="5745" top="5250" width="2310" height="270">
+   <BOUNDS type="Node" left="1320" top="6810" width="2310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5745" top="5250" width="2655" height="240">
+   <BOUNDS type="Box" left="1320" top="6810" width="2655" height="240">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|CONNECT TOP PIN WITH BOTTOM OF LYRIC|">
    </PIN>
@@ -1071,9 +1053,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="247" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="2430" top="750" width="2310" height="270">
+   <BOUNDS type="Node" left="2430" top="600" width="2310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2430" top="750" width="2610" height="765">
+   <BOUNDS type="Box" left="2430" top="600" width="2610" height="765">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Ctrl+E: locked&cr;&lf;Alt+scroll: scroll horizontally&cr;&lf;Ctrl+scroll: scroll down quick|">
    </PIN>
@@ -1101,9 +1083,9 @@
    <LINK srcnodeid="250" srcpinname="Y Output Value" dstnodeid="120" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="251" systemname="IOBox (String)" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="5280" top="780" width="2310" height="270">
+   <BOUNDS type="Node" left="5235" top="585" width="2310" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5280" top="780" width="2340" height="750">
+   <BOUNDS type="Box" left="5235" top="585" width="2340" height="750">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Left click: Visual&cr;&lf;Right click: Forward lyric&cr;&lf;Middle click: Backward lyric|">
    </PIN>
@@ -1129,26 +1111,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="252" srcpinname="Y Output Value" dstnodeid="112" dstpinname="Period" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="186" srcpinname="Y Output Value" dstnodeid="140" dstpinname="Reset" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="6465" y="4845">
-   </LINKPOINT>
-   <LINKPOINT x="12315" y="4845">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="253">
-   <BOUNDS type="Node" left="12840" top="4920" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="12840" top="4920" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="7.13">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Warp Speed|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="253" srcpinname="Y Output Value" dstnodeid="117" dstpinname="Period" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="256" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="6705" top="7275" width="100" height="100">
@@ -1200,7 +1162,7 @@
    <LINKPOINT x="6675" y="5968">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="256" srcpinname="Y Output Value" dstnodeid="49" dstpinname="Down" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINK srcnodeid="256" srcpinname="Y Output Value" dstnodeid="49" dstpinname="Down" linkstyle="VHV" hiddenwhenlocked="1">
    <LINKPOINT x="6765" y="8303">
    </LINKPOINT>
    <LINKPOINT x="7950" y="8303">
@@ -1222,6 +1184,410 @@
    </LINK>
    <LINK srcnodeid="49" srcpinname="Output" dstnodeid="51" dstpinname="Index" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="190" srcpinname="Output String" dstnodeid="51" dstpinname="Input">
+   <NODE id="253" systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox">
+   <BOUNDS type="Node" left="12840" top="4920" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12840" top="4920" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="7.13">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Warp Speed|">
+   </PIN>
+   </NODE>
+   <NODE id="140" systemname="Counter (Animation)" nodename="Counter (Animation)" componentmode="Hidden" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="11310" top="4530" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Up" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="5000">
+   </PIN>
+   <PIN pinname="Increment" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="186" srcpinname="Y Output Value" dstnodeid="140" dstpinname="Reset" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="6465" y="4845">
+   </LINKPOINT>
+   <LINKPOINT x="12315" y="4845">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="140" srcpinname="Output" dstnodeid="118" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="11360" y="5118">
+   </LINKPOINT>
+   <LINKPOINT x="11740" y="5128">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="138" srcpinname="Up Edge" dstnodeid="140" dstpinname="Up" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="253" srcpinname="Y Output Value" dstnodeid="117" dstpinname="Period" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="268" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="1710" top="6540" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="55" values="| |,|I took the day off and we&apos;re sticking to the plan|,|I can&apos;t come to the phone right now|,|I left a sticky with instructions on the fridge|,|I gotta swing by the house and grab my amulet|,| (THIS ADVENTURE&apos;S HAPPENING)|,|You&apos;ve got obligations|,|(THIS ADVENTURE&apos;S HAPPENING)|,|What&apos;s your explanation?|,|(THIS ADVENTURE&apos;S HAPPENING)|,|I&apos;m starting to lose my patience.|,|(THIS ADVENTURE&apos;S HAPPENING)|,|The idol burns with an ominous light|,|Tuck it in your cloak, friend, keep it out of sight|,|The wizard will appraise it and trade it for a map|,|Written in a language only spoken in the past|,|Can you fathom the fathoms deep in the caverns|,|Do you insist this abyss is amiss |,|Do you gape at the gaping great grotto|,|Or itch to pitch right into the ditch|,|(THIS ADVENTURE&apos;S HAPPENING)|,|You&apos;ve got obligations|,|(THIS ADVENTURE&apos;S HAPPENING)|,|What&apos;s your explanation?|,|(THIS ADVENTURE&apos;S HAPPENING)|,|I&apos;m starting to lose my patience.|,|(THIS ADVENTURE&apos;S HAPPENING)|,| |,|Steel meets skull with a sickening crack|,|The Mangeler&apos;s bones turn back into stones|,|The water recedes and path is revealed|,|The Serpent Lord&apos;s treasure horde is your’s|,|(THIS ADVENTURE&apos;S HAPPENING)|,|You&apos;ve got obligations|,|(THIS ADVENTURE&apos;S HAPPENING)|,|What&apos;s your explanation?|,|(THIS ADVENTURE&apos;S HAPPENING)|,|I&apos;m starting to lose my patience.|,|(THIS ADVENTURE&apos;S HAPPENING)|,|You open your door to that old familiar smell|,|Your apartment looks pretty much as you left it|,|452 work related emails|,|Here&apos;s my phone charger, where&apos;s my amulet? |,,,,,,,,,,,,">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="55" values="| |,|I’m going to call you by your government name|,|Call You By Your government name|,|Don&apos;t even try to beef with me|,|Stay anonymous like all my enemies|,|It’s just one of those things|,|where you think it’s ok|,|To start a beef with me|,|but that’s a big mistake|,|And at the end of the day,|,|I’m very sorry for you|,|You are an old old man|,|who&apos;s lost the spotlight, dude|,|You lost your relevance|,|and now you’re tryin&apos; to reclaim|,|The spotlight from my spotlight|,|but you&apos;re tired and lame|,|So that’s not gonna work|,|Ghost Dennis|,|You are gonna be done|,|Ghost Dennis|,| |,|I’m going to call you by your government name|,|Call you by your government name|,|Don&apos;t even try to beef with me|,|Stay anonymous like my enemies|,|In fact if you ever say anything|,|I will erase you from the album|,|I will erase you from the record books|,|And I&apos;ll erase you from the album|,| You are gonna be done,|,|You are my son,|,|which means you’ve got to listen to me   |,|I&apos;m your father, I said,|,|and I butter your bread,|,|Now do you understand me?|,|I’m sorry, I&apos;m not gonna to let this slide|,|And though I pity you|,|some punishment is what is required|,|I am expecting a written apology|,|Some contrition,|,|of your sorrows and your sadness, you see|,|I’m going to call you by your government name|,|Call you by your government  name|,|Life is no nintendo game|,|Don&apos;t you ever mention my name again|,|In fact if you ever say any thing|,|I will erase you from the album|,|I will erase you|,|from the record books|,|And I&apos;ll erase you from this album |,,,,">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="38" values="| |,|This cat is a pig |,|has a girl who&apos;s a dog |,|but thinks she&apos;s a fox |,|The pig is a snake |,|Who pontificates |,|Harken, he&apos;s blessed &cr;&lf;|,|The fox is a mess|,|A community chest |,|Yeah, she gets around |,|Her face is a cake &cr;&lf;|,|and when she gets baked |,|it melts to a frown |,|They take pictures of each other|,|taking pix of one another |,|There&apos;s some worms with no brains|,|who come out when it rains|,|And they squirm on the ground|,|til the birds come around |,|It summons the brood|,|putting chicks in the mood |,|A hawk sees the flock and swoops in on a hen|,|Dressing smart for one another|,|so they can undress each other|,| |,| (Instrumental)|,|The weasel in mink always says what he thinks|,|till the skunk made a stink |,|The Rodents attack but the Varmints fight back|,|and fur starts to fly |,|Caught in the brawl|,|the dog tries to call out for the cat |,|Diving into the fray|,|he pulls her away|,|He just saved the day |,|They take pictures of each other|,|taking pix of one another|,">
+   </PIN>
+   <PIN pinname="Switch" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Input 4" visible="1">
+   </PIN>
+   <PIN pinname="Input 5" visible="1">
+   </PIN>
+   <PIN pinname="Input 6" visible="1">
+   </PIN>
+   <PIN pinname="Input 7" visible="1">
+   </PIN>
+   <PIN pinname="Input 8" visible="1">
+   </PIN>
+   <PIN pinname="Input 9" visible="1">
+   </PIN>
+   <PIN pinname="Input 10" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="268" srcpinname="Output" dstnodeid="51" dstpinname="Input" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="1740" y="6465">
+   </LINKPOINT>
+   <LINKPOINT x="5565" y="6465">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="271" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="270" top="7140" width="675" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="42" values="| |,|new year, new tour |,|same songs, the same four |,|our music&apos;s stuck in limbo |,|sustained by high school bimbos |,|the drummer just quit |,|sick of preteen bullshit |,|our t-shirts on children |,|who lack the breasts to fill them |,|no one wants to be with you |,|when you&apos;re bald at 32 |,|no one wants to be your friend |,|when your youth is at an end |,|life is gonna get you down|,|and then you&apos;re 6 feet underground |,|you&apos;re half the man your father was |,|life is tough |,|and homework sucks! |,,|My credit&apos;s abysmal |,|My love life… |,|dismal |,|Taking prescriptions |,|for my gambling addiction |,|my fridge is barren |,|just like my ex-wife Karen |,|libido waning |,|with each pound that I&apos;m gaining |,|no reason left to be alive |,|when you&apos;re pushing 45 |,|and no one wants to be with you |,|when your life is half way through |,|life is gonna get you down |,|as the green leaves turn to brown |,|you&apos;re half the man you used to be |,|life is fucked! |,|and homework sucks|,,,,,">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" visible="1" values="11">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" values="1" visible="-1" pintype="Input">
+   </PIN>
+   <PIN pinname="Output Bins" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Output" dstnodeid="271" dstpinname="Index" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="5605" y="6940">
+   </LINKPOINT>
+   <LINKPOINT x="965" y="7910">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="234" srcpinname="Output String" dstnodeid="271" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="271" srcpinname="Output" dstnodeid="268" dstpinname="Input 1" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="350" y="6965">
+   </LINKPOINT>
+   <LINKPOINT x="1855" y="6955">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="272" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="1650" top="7125" width="675" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="42" values="| |,|new year, new tour |,|same songs, the same four |,|our music&apos;s stuck in limbo |,|sustained by high school bimbos |,|the drummer just quit |,|sick of preteen bullshit |,|our t-shirts on children |,|who lack the breasts to fill them |,|no one wants to be with you |,|when you&apos;re bald at 32 |,|no one wants to be your friend |,|when your youth is at an end |,|life is gonna get you down|,|and then you&apos;re 6 feet underground |,|you&apos;re half the man your father was |,|life is tough |,|and homework sucks! |,,|My credit&apos;s abysmal |,|My love life… |,|dismal |,|Taking prescriptions |,|for my gambling addiction |,|my fridge is barren |,|just like my ex-wife Karen |,|libido waning |,|with each pound that I&apos;m gaining |,|no reason left to be alive |,|when you&apos;re pushing 45 |,|and no one wants to be with you |,|when your life is half way through |,|life is gonna get you down |,|as the green leaves turn to brown |,|you&apos;re half the man you used to be |,|life is fucked! |,|and homework sucks|,,,,,">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" visible="1" values="11">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" values="1" visible="-1" pintype="Input">
+   </PIN>
+   <PIN pinname="Output Bins" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Output" dstnodeid="272" dstpinname="Index" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="5040" y="6705">
+   </LINKPOINT>
+   <LINKPOINT x="2325" y="7890">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="272" srcpinname="Output" dstnodeid="268" dstpinname="Input 2" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="1680" y="6968">
+   </LINKPOINT>
+   <LINKPOINT x="2025" y="6968">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="236" srcpinname="Output String" dstnodeid="272" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="273" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="3015" top="7200" width="675" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="42" values="| |,|new year, new tour |,|same songs, the same four |,|our music&apos;s stuck in limbo |,|sustained by high school bimbos |,|the drummer just quit |,|sick of preteen bullshit |,|our t-shirts on children |,|who lack the breasts to fill them |,|no one wants to be with you |,|when you&apos;re bald at 32 |,|no one wants to be your friend |,|when your youth is at an end |,|life is gonna get you down|,|and then you&apos;re 6 feet underground |,|you&apos;re half the man your father was |,|life is tough |,|and homework sucks! |,,|My credit&apos;s abysmal |,|My love life… |,|dismal |,|Taking prescriptions |,|for my gambling addiction |,|my fridge is barren |,|just like my ex-wife Karen |,|libido waning |,|with each pound that I&apos;m gaining |,|no reason left to be alive |,|when you&apos;re pushing 45 |,|and no one wants to be with you |,|when your life is half way through |,|life is gonna get you down |,|as the green leaves turn to brown |,|you&apos;re half the man you used to be |,|life is fucked! |,|and homework sucks|,,,,,">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" visible="1" values="11">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" visible="-1" pintype="Input" values="1">
+   </PIN>
+   <PIN pinname="Output Bins" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="188" srcpinname="Output String" dstnodeid="273" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Output" dstnodeid="273" dstpinname="Index" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="4465" y="6560">
+   </LINKPOINT>
+   <LINKPOINT x="3650" y="7945">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="273" srcpinname="Output" dstnodeid="268" dstpinname="Input 3" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="3015" y="6998">
+   </LINKPOINT>
+   <LINKPOINT x="2250" y="6998">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="276" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="1725" top="6180" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1725" top="6180" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Song Number|">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="276" srcpinname="Y Output Value" dstnodeid="268" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="279" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="285" top="11070" width="675" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="42" values="| |,|new year, new tour |,|same songs, the same four |,|our music&apos;s stuck in limbo |,|sustained by high school bimbos |,|the drummer just quit |,|sick of preteen bullshit |,|our t-shirts on children |,|who lack the breasts to fill them |,|no one wants to be with you |,|when you&apos;re bald at 32 |,|no one wants to be your friend |,|when your youth is at an end |,|life is gonna get you down|,|and then you&apos;re 6 feet underground |,|you&apos;re half the man your father was |,|life is tough |,|and homework sucks! |,,|My credit&apos;s abysmal |,|My love life… |,|dismal |,|Taking prescriptions |,|for my gambling addiction |,|my fridge is barren |,|just like my ex-wife Karen |,|libido waning |,|with each pound that I&apos;m gaining |,|no reason left to be alive |,|when you&apos;re pushing 45 |,|and no one wants to be with you |,|when your life is half way through |,|life is gonna get you down |,|as the green leaves turn to brown |,|you&apos;re half the man you used to be |,|life is fucked! |,|and homework sucks|,,,,,">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" visible="1" values="11">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" visible="-1" pintype="Input" values="1">
+   </PIN>
+   <PIN pinname="Output Bins" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="278" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="1620" top="11100" width="675" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="42" values="| |,|new year, new tour |,|same songs, the same four |,|our music&apos;s stuck in limbo |,|sustained by high school bimbos |,|the drummer just quit |,|sick of preteen bullshit |,|our t-shirts on children |,|who lack the breasts to fill them |,|no one wants to be with you |,|when you&apos;re bald at 32 |,|no one wants to be your friend |,|when your youth is at an end |,|life is gonna get you down|,|and then you&apos;re 6 feet underground |,|you&apos;re half the man your father was |,|life is tough |,|and homework sucks! |,,|My credit&apos;s abysmal |,|My love life… |,|dismal |,|Taking prescriptions |,|for my gambling addiction |,|my fridge is barren |,|just like my ex-wife Karen |,|libido waning |,|with each pound that I&apos;m gaining |,|no reason left to be alive |,|when you&apos;re pushing 45 |,|and no one wants to be with you |,|when your life is half way through |,|life is gonna get you down |,|as the green leaves turn to brown |,|you&apos;re half the man you used to be |,|life is fucked! |,|and homework sucks|,,,,,">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" visible="1" values="11">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" visible="-1" pintype="Input" values="1">
+   </PIN>
+   <PIN pinname="Output Bins" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="277" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="2955" top="11070" width="675" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="42" values="| |,|new year, new tour |,|same songs, the same four |,|our music&apos;s stuck in limbo |,|sustained by high school bimbos |,|the drummer just quit |,|sick of preteen bullshit |,|our t-shirts on children |,|who lack the breasts to fill them |,|no one wants to be with you |,|when you&apos;re bald at 32 |,|no one wants to be your friend |,|when your youth is at an end |,|life is gonna get you down|,|and then you&apos;re 6 feet underground |,|you&apos;re half the man your father was |,|life is tough |,|and homework sucks! |,,|My credit&apos;s abysmal |,|My love life… |,|dismal |,|Taking prescriptions |,|for my gambling addiction |,|my fridge is barren |,|just like my ex-wife Karen |,|libido waning |,|with each pound that I&apos;m gaining |,|no reason left to be alive |,|when you&apos;re pushing 45 |,|and no one wants to be with you |,|when your life is half way through |,|life is gonna get you down |,|as the green leaves turn to brown |,|you&apos;re half the man you used to be |,|life is fucked! |,|and homework sucks|,,,,,">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" visible="1" values="11">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" visible="-1" pintype="Input" values="1">
+   </PIN>
+   <PIN pinname="Output Bins" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Output" dstnodeid="277" dstpinname="Index" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="7795" y="9890">
+   </LINKPOINT>
+   <LINKPOINT x="3620" y="9835">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Output" dstnodeid="278" dstpinname="Index" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="7795" y="9905">
+   </LINKPOINT>
+   <LINKPOINT x="2285" y="9850">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Output" dstnodeid="279" dstpinname="Index" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="7795" y="9890">
+   </LINKPOINT>
+   <LINKPOINT x="950" y="9835">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="211" srcpinname="Output String" dstnodeid="279" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="243" srcpinname="Output String" dstnodeid="278" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="201" srcpinname="Output String" dstnodeid="277" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="279" srcpinname="Output" dstnodeid="268" dstpinname="Input 4" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="305" y="8913">
+   </LINKPOINT>
+   <LINKPOINT x="2350" y="8968">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="278" srcpinname="Output" dstnodeid="268" dstpinname="Input 5" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="1640" y="8920">
+   </LINKPOINT>
+   <LINKPOINT x="2530" y="8975">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="277" srcpinname="Output" dstnodeid="268" dstpinname="Input 6" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="2960" y="8905">
+   </LINKPOINT>
+   <LINKPOINT x="2710" y="8960">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="282" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="375" top="14040" width="675" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="42" values="| |,|new year, new tour |,|same songs, the same four |,|our music&apos;s stuck in limbo |,|sustained by high school bimbos |,|the drummer just quit |,|sick of preteen bullshit |,|our t-shirts on children |,|who lack the breasts to fill them |,|no one wants to be with you |,|when you&apos;re bald at 32 |,|no one wants to be your friend |,|when your youth is at an end |,|life is gonna get you down|,|and then you&apos;re 6 feet underground |,|you&apos;re half the man your father was |,|life is tough |,|and homework sucks! |,,|My credit&apos;s abysmal |,|My love life… |,|dismal |,|Taking prescriptions |,|for my gambling addiction |,|my fridge is barren |,|just like my ex-wife Karen |,|libido waning |,|with each pound that I&apos;m gaining |,|no reason left to be alive |,|when you&apos;re pushing 45 |,|and no one wants to be with you |,|when your life is half way through |,|life is gonna get you down |,|as the green leaves turn to brown |,|you&apos;re half the man you used to be |,|life is fucked! |,|and homework sucks|,,,,,">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" visible="1" values="11">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" visible="-1" pintype="Input" values="1">
+   </PIN>
+   <PIN pinname="Output Bins" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="281" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="1710" top="14070" width="675" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="42" values="| |,|new year, new tour |,|same songs, the same four |,|our music&apos;s stuck in limbo |,|sustained by high school bimbos |,|the drummer just quit |,|sick of preteen bullshit |,|our t-shirts on children |,|who lack the breasts to fill them |,|no one wants to be with you |,|when you&apos;re bald at 32 |,|no one wants to be your friend |,|when your youth is at an end |,|life is gonna get you down|,|and then you&apos;re 6 feet underground |,|you&apos;re half the man your father was |,|life is tough |,|and homework sucks! |,,|My credit&apos;s abysmal |,|My love life… |,|dismal |,|Taking prescriptions |,|for my gambling addiction |,|my fridge is barren |,|just like my ex-wife Karen |,|libido waning |,|with each pound that I&apos;m gaining |,|no reason left to be alive |,|when you&apos;re pushing 45 |,|and no one wants to be with you |,|when your life is half way through |,|life is gonna get you down |,|as the green leaves turn to brown |,|you&apos;re half the man you used to be |,|life is fucked! |,|and homework sucks|,,,,,">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" visible="1" values="11">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" visible="-1" pintype="Input" values="1">
+   </PIN>
+   <PIN pinname="Output Bins" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="280" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="3045" top="14040" width="675" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="42" values="| |,|new year, new tour |,|same songs, the same four |,|our music&apos;s stuck in limbo |,|sustained by high school bimbos |,|the drummer just quit |,|sick of preteen bullshit |,|our t-shirts on children |,|who lack the breasts to fill them |,|no one wants to be with you |,|when you&apos;re bald at 32 |,|no one wants to be your friend |,|when your youth is at an end |,|life is gonna get you down|,|and then you&apos;re 6 feet underground |,|you&apos;re half the man your father was |,|life is tough |,|and homework sucks! |,,|My credit&apos;s abysmal |,|My love life… |,|dismal |,|Taking prescriptions |,|for my gambling addiction |,|my fridge is barren |,|just like my ex-wife Karen |,|libido waning |,|with each pound that I&apos;m gaining |,|no reason left to be alive |,|when you&apos;re pushing 45 |,|and no one wants to be with you |,|when your life is half way through |,|life is gonna get you down |,|as the green leaves turn to brown |,|you&apos;re half the man you used to be |,|life is fucked! |,|and homework sucks|,,,,,">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" visible="1" values="11">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" visible="-1" pintype="Input" values="1">
+   </PIN>
+   <PIN pinname="Output Bins" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="283" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="4185" top="13995" width="675" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="42" values="| |,|new year, new tour |,|same songs, the same four |,|our music&apos;s stuck in limbo |,|sustained by high school bimbos |,|the drummer just quit |,|sick of preteen bullshit |,|our t-shirts on children |,|who lack the breasts to fill them |,|no one wants to be with you |,|when you&apos;re bald at 32 |,|no one wants to be your friend |,|when your youth is at an end |,|life is gonna get you down|,|and then you&apos;re 6 feet underground |,|you&apos;re half the man your father was |,|life is tough |,|and homework sucks! |,,|My credit&apos;s abysmal |,|My love life… |,|dismal |,|Taking prescriptions |,|for my gambling addiction |,|my fridge is barren |,|just like my ex-wife Karen |,|libido waning |,|with each pound that I&apos;m gaining |,|no reason left to be alive |,|when you&apos;re pushing 45 |,|and no one wants to be with you |,|when your life is half way through |,|life is gonna get you down |,|as the green leaves turn to brown |,|you&apos;re half the man you used to be |,|life is fucked! |,|and homework sucks|,,,,,">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" visible="1" values="11">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" visible="-1" pintype="Input" values="1">
+   </PIN>
+   <PIN pinname="Output Bins" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Output" dstnodeid="283" dstpinname="Index" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="7785" y="11340">
+   </LINKPOINT>
+   <LINKPOINT x="4845" y="11340">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Output" dstnodeid="280" dstpinname="Index" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="7770" y="11355">
+   </LINKPOINT>
+   <LINKPOINT x="3720" y="11355">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Output" dstnodeid="281" dstpinname="Index" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="7785" y="11363">
+   </LINKPOINT>
+   <LINKPOINT x="2385" y="11363">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Output" dstnodeid="282" dstpinname="Index" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="7785" y="11348">
+   </LINKPOINT>
+   <LINKPOINT x="1050" y="11348">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="241" srcpinname="Output String" dstnodeid="282" dstpinname="Input" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="315" y="15295">
+   </LINKPOINT>
+   <LINKPOINT x="375" y="15425">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="189" srcpinname="Output String" dstnodeid="281" dstpinname="Input" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="1690" y="16203">
+   </LINKPOINT>
+   <LINKPOINT x="1730" y="16333">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="190" srcpinname="Output String" dstnodeid="280" dstpinname="Input" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="3045" y="16563">
+   </LINKPOINT>
+   <LINKPOINT x="3075" y="16678">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="198" srcpinname="Output String" dstnodeid="283" dstpinname="Input" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="4220" y="15673">
+   </LINKPOINT>
+   <LINKPOINT x="4225" y="15828">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="282" srcpinname="Output" dstnodeid="268" dstpinname="Input 7" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="405" y="10425">
+   </LINKPOINT>
+   <LINKPOINT x="2835" y="10425">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="281" srcpinname="Output" dstnodeid="268" dstpinname="Input 8" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="1740" y="10440">
+   </LINKPOINT>
+   <LINKPOINT x="3000" y="10440">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="280" srcpinname="Output" dstnodeid="268" dstpinname="Input 9" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="3075" y="10425">
+   </LINKPOINT>
+   <LINKPOINT x="3150" y="10425">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="283" srcpinname="Output" dstnodeid="268" dstpinname="Input 10" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="4200" y="10403">
+   </LINKPOINT>
+   <LINKPOINT x="3330" y="10403">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="284" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="240" top="1470" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="240" top="1470" width="5130" height="585">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="19">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="268" srcpinname="Output" dstnodeid="284" dstpinname="Input String" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="0" y="5390">
+   </LINKPOINT>
+   <LINKPOINT x="2960" y="2860">
+   </LINKPOINT>
    </LINK>
    </PATCH>
